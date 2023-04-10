@@ -1,0 +1,43 @@
+$font-decor: 'Fugaz One', cursive;
+$font: 'Poppins', sans-serif;
+
+$color-primary: #a27bd5;
+$color-primary-shade: #281047;
+$color-secondary: #f67ba4;
+
+$medium-screen: 678px;
+
+$transition-time: 200ms;
+$margin: 16px;
+
+@mixin flexbox($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button-styles {
+    border-radius: 100%;
+    background-color: $color-primary-shade;
+    color: $color-secondary;
+    border: 3px solid $color-secondary;
+    outline: 0;
+    box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+    -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 30px 3px -17px rgba(255, 255, 255, 0.58) inset;
+        -webkit-box-shadow: 0px 20px 5px -17px rgba(255, 255, 255, 0.58) inset;
+        -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    }
+
+    &:active {
+        box-shadow: 5px 25px 3px -17px rgba(255, 255, 255, 0.58) inset;
+        -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+        -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    }
+
+}

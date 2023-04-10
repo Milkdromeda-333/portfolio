@@ -1,0 +1,160 @@
+@use 'reset';
+@use "abstracts";
+
+
+body {
+    background-color: abstracts.$color-primary;
+    font-family: abstracts.$font;
+    color: abstracts.$color-primary-shade;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.body-container {
+    margin: 16px;
+}
+
+header {
+    height: 100vh;
+}
+
+nav {
+    @include abstracts.flexbox(row, space-between, center);
+    width: 100%;
+    padding: .5rem;
+    background-color: abstracts.$color-primary;
+
+    position: relative;
+    font-size: 1.5rem;
+    border-bottom: 2px solid abstracts.$color-primary-shade;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    li {
+        list-style: none;
+    }
+    
+    .hamburger-icon {
+        position: relative;
+        @include abstracts.flexbox(column, space-evenly, center);
+
+        img {
+            width: 30px;
+        }
+    }
+    
+    .nav__links {
+        padding: 16px 0 0;
+        position: absolute;
+        top: 103%;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+
+        text-align: center;
+        border-right: 2px solid abstracts.$color-primary-shade;
+        background-color: abstracts.$color-primary;
+
+        transition: all 300ms ease-in-out;
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    .nav__logo {
+        font-family: abstracts.$font-decor;
+        color: abstracts.$color-primary-shade;
+    }
+
+    @media screen and (min-width: abstracts.$medium-screen) {
+
+        padding: 0 16px;
+        height: 70px;
+
+        .nav__logo {
+            font-size: 2rem;
+        }
+
+        .nav__links {
+            position: static;
+            @include abstracts.flexbox(row, center, center);
+            gap: 1rem;
+            width: auto;
+            height: auto;
+            border: none;
+            background-color: unset;
+            padding: 0;
+        }
+
+        .hamburger-icon {
+            display: none;
+        }
+    }
+}
+
+.hero {
+    @include abstracts.flexbox(column, center, center);
+    margin: abstracts.$margin;
+    margin-top: 50px;
+
+    h1 {
+       font-weight: bold;
+       font-family: abstracts.$font-decor; 
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    &__name {
+        color: abstracts.$color-secondary;
+        text-shadow: 1px 1px 5px black;
+        font-size: 2.2rem;
+        margin-left: 8px;
+        margin-right: 5px;
+
+    }
+
+    &__img {
+        border-radius: 15px;
+        height: 200px;
+    }
+
+    &__button {
+        @include abstracts.button-styles;
+        padding: 15px;
+        margin-top: 16px;
+    }
+
+    &__content {
+        @include abstracts.flexbox(column, center, end);
+    }
+
+    @media all and (min-width: abstracts.$medium-screen) {
+        @include abstracts.flexbox(row-reverse, space-evenly, center);
+
+        margin-top: 80px;
+        margin-inline: 0;
+
+        &__img {
+            height: auto;
+            width: 30%;
+        }
+        
+        &__content {
+            @include abstracts.flexbox(column, center, start);
+        }
+
+        div {
+            width: 50%;
+        }
+    }
+
+}
+

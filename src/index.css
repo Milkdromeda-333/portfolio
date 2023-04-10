@@ -190,6 +190,8 @@ nav .nav__logo {
   color: #f67ba4;
   text-shadow: 1px 1px 5px black;
   font-size: 2.2rem;
+  margin-left: 8px;
+  margin-right: 5px;
 }
 .hero__img {
   border-radius: 15px;
@@ -248,4 +250,4 @@ nav .nav__logo {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */
