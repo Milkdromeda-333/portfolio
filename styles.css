@@ -17,6 +17,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-weight: normal;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -86,68 +87,47 @@ body {
 }
 
 a {
-  position: relative;
-  padding-inline: 10px;
+  text-decoration: none;
 }
-a::after {
-  position: absolute;
-  content: "";
-  height: 5px;
-  bottom: 6px;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  background-color: #f67ba4;
-  opacity: 0.5;
-  transition: all 200ms ease;
+
+.body-container {
+  margin: 16px;
 }
-a:hover::after {
-  opacity: 1;
-  height: 100%;
-  bottom: 0px;
+
+header {
+  height: 100vh;
 }
 
 nav {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 0.5rem;
+  background-color: #a27bd5;
   position: relative;
   font-size: 1.5rem;
   border-bottom: 2px solid #281047;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav li {
   list-style: none;
 }
-nav a {
-  text-decoration: none;
-}
-@media screen and (min-width: 678px) {
-  nav {
-    padding: 1rem;
-  }
-}
-
-.hamburger-icon {
+nav .hamburger-icon {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.hamburger-icon img {
+nav .hamburger-icon img {
   width: 30px;
 }
-@media screen and (min-width: 678px) {
-  .hamburger-icon {
-    display: none;
-  }
-}
-
-.nav-links {
-  padding: 0;
+nav .nav__links {
+  padding: 16px 0 0;
   position: absolute;
   top: 103%;
   left: -100%;
@@ -158,11 +138,22 @@ nav a {
   background-color: #a27bd5;
   transition: all 300ms ease-in-out;
 }
-.nav-links.active {
+nav .nav__links.active {
   left: 0;
 }
+nav .nav__logo {
+  font-family: "Fugaz One", cursive;
+  color: #281047;
+}
 @media screen and (min-width: 678px) {
-  .nav-links {
+  nav {
+    padding: 0 16px;
+    height: 70px;
+  }
+  nav .nav__logo {
+    font-size: 2rem;
+  }
+  nav .nav__links {
     position: static;
     display: flex;
     flex-direction: row;
@@ -173,6 +164,87 @@ nav a {
     height: auto;
     border: none;
     background-color: unset;
+    padding: 0;
+  }
+  nav .hamburger-icon {
+    display: none;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  margin-top: 50px;
+}
+.hero h1 {
+  font-weight: bold;
+  font-family: "Fugaz One", cursive;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.hero__name {
+  color: #f67ba4;
+  text-shadow: 1px 1px 5px black;
+  font-size: 2.2rem;
+}
+.hero__img {
+  border-radius: 15px;
+  height: 200px;
+}
+.hero__button {
+  border-radius: 100%;
+  background-color: #281047;
+  color: #f67ba4;
+  border: 3px solid #f67ba4;
+  outline: 0;
+  box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+  -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 16px;
+}
+.hero__button:hover {
+  box-shadow: 0px 30px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  -webkit-box-shadow: 0px 20px 5px -17px rgba(255, 255, 255, 0.58) inset;
+  -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+}
+.hero__button:active {
+  box-shadow: 5px 25px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+  -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+@media all and (min-width: 678px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+    margin-inline: 0;
+  }
+  .hero__img {
+    height: auto;
+    width: 30%;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .hero div {
+    width: 50%;
   }
 }
 

@@ -1,1 +1,0 @@
-- I had a hard time dwitching over to vanilla Javascript, and an issue with using Sass because of how new I am to it. The important thing is to keep going and be resilient and to be hungry for a solution, and know that there is one that is aquirable.

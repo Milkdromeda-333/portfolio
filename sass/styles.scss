@@ -3,16 +3,14 @@
 $font-decor: 'Fugaz One', cursive;
 $font: 'Poppins', sans-serif;
 
-
-$colors: (
-    "purple": #a27bd5,
-    "purple-shade": #281047,
-    "pink": #f67ba4,
-);
+$color-primary: #a27bd5;
+$color-primary-shade: #281047;
+$color-secondary: #f67ba4;
 
 $medium-screen: 678px;
 
 $transition-time: 200ms;
+$margin: 16px;
 
 @mixin flexbox($direction, $justify, $align){
     display: flex;
@@ -21,94 +19,111 @@ $transition-time: 200ms;
     align-items: $align;
 }
 
-body {
-    background-color: map-get($colors, "purple");
-    font-family: $font;
-    color: map-get( $colors,"purple-shade");
+@mixin button-styles {
+    border-radius: 100%;
+    background-color: $color-primary-shade;
+    color: $color-secondary;
+    border: 3px solid $color-secondary;
+    outline: 0;
+    box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+        -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+        -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 30px 3px -17px rgba(255, 255, 255, 0.58) inset;
+            -webkit-box-shadow: 0px 20px 5px -17px rgba(255, 255, 255, 0.58) inset;
+            -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    }
+
+    &:active {
+        box-shadow: 5px 25px 3px -17px rgba(255, 255, 255, 0.58) inset;
+            -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+            -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+    }
+
 }
 
+body {
+    background-color: $color-primary;
+    font-family: $font;
+    color: $color-primary-shade;
+}
+
+
 a {
-    position: relative;
-    padding-inline: 10px;
+    text-decoration: none;
+}
 
-    &::after {
-        position: absolute;
-        content: "";
-        height: 5px;
-        bottom: 6px;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        background-color: map-get($colors, "pink");
-        opacity: .5;
-        transition: all $transition-time ease;
-    }
+.body-container {
+    margin: 16px;
+}
 
-    &:hover::after {
-        opacity: 1;
-        height: 100%;
-        bottom: 0px;
-    }
+header {
+    height: 100vh;
 }
 
 nav {
-    width: 100%;
     @include flexbox(row, space-between, center);
+    width: 100%;
     padding: .5rem;
+    background-color: $color-primary;
+
     position: relative;
     font-size: 1.5rem;
-    border-bottom: 2px solid map-get($colors, "purple-shade");
+    border-bottom: 2px solid $color-primary-shade;
+
+    position: fixed;
+    top: 0;
+    left: 0;
 
     li {
         list-style: none;
     }
+    
+    .hamburger-icon {
+        position: relative;
+        @include flexbox(column, space-evenly, center);
 
-    a {
-        text-decoration: none;
+        img {
+            width: 30px;
+        }
+    }
+    
+    .nav__links {
+        padding: 16px 0 0;
+        position: absolute;
+        top: 103%;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+
+        text-align: center;
+        border-right: 2px solid $color-primary-shade;
+        background-color: $color-primary;
+
+        transition: all 300ms ease-in-out;
+
+        &.active {
+            left: 0;
+        }
     }
 
-        @media screen and (min-width: $medium-screen) {
-            & {
-                padding: 1rem;
-            }
-        }
-}
-
-.hamburger-icon {
-    position: relative;
-    @include flexbox(column, space-evenly, center);
-
-    img {
-        width: 30px;
+    .nav__logo {
+        font-family: $font-decor;
+        color: $color-primary-shade;
     }
 
     @media screen and (min-width: $medium-screen) {
-        & {
-            display: none;
+
+        padding: 0 16px;
+        height: 70px;
+
+        .nav__logo {
+            font-size: 2rem;
         }
-    }
-}
 
-.nav-links {
-    padding: 0;
-    position: absolute;
-    top: 103%;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-
-    text-align: center;
-    border-right: 2px solid map-get($colors, "purple-shade" );
-    background-color: map-get($colors, "purple");
-
-    transition: all 300ms ease-in-out;
-
-    &.active {
-        left: 0;
-    }
-
-    @media screen and (min-width: $medium-screen) {
-        & {
+        .nav__links {
             position: static;
             @include flexbox(row, center, center);
             gap: 1rem;
@@ -116,6 +131,67 @@ nav {
             height: auto;
             border: none;
             background-color: unset;
+            padding: 0;
+        }
+
+        .hamburger-icon {
+            display: none;
+        }
+    }
+}
+
+.hero {
+    @include flexbox(column, center, center);
+    margin: $margin;
+    margin-top: 50px;
+
+    h1 {
+       font-weight: bold;
+       font-family: $font-decor; 
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    &__name {
+        color: $color-secondary;
+        text-shadow: 1px 1px 5px black;
+        font-size: 2.2rem;
+    }
+
+    &__img {
+        border-radius: 15px;
+        height: 200px;
+    }
+
+    &__button {
+        @include button-styles;
+        padding: 15px;
+        margin-top: 16px;
+    }
+
+    &__content {
+        @include flexbox(column, center, end);
+    }
+
+    @media all and (min-width: $medium-screen) {
+        @include flexbox(row-reverse, space-evenly, center);
+
+        margin-top: 80px;
+        margin-inline: 0;
+
+        &__img {
+            height: auto;
+            width: 30%;
+        }
+        
+        &__content {
+            @include flexbox(column, center, start);
+        }
+
+        div {
+            width: 50%;
         }
     }
 
