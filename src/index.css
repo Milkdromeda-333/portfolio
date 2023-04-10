@@ -94,10 +94,6 @@ a {
   margin: 16px;
 }
 
-header {
-  height: 100vh;
-}
-
 nav {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,78 @@
+@use "../abstracts" as *;
+
+nav {
+    @include flexbox(row, space-between, center);
+    width: 100%;
+    padding: .5rem;
+    background-color: $color-primary;
+
+    position: relative;
+    font-size: 1.5rem;
+    border-bottom: 2px solid $color-primary-shade;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    li {
+        list-style: none;
+    }
+
+    .hamburger-icon {
+        position: relative;
+        @include flexbox(column, space-evenly, center);
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .nav__links {
+        padding: 16px 0 0;
+        position: absolute;
+        top: 103%;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+
+        text-align: center;
+        border-right: 2px solid $color-primary-shade;
+        background-color: $color-primary;
+
+        transition: all 300ms ease-in-out;
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    .nav__logo {
+        font-family: $font-decor;
+        color: $color-primary-shade;
+    }
+
+    @media screen and (min-width: $medium-screen) {
+
+        padding: 0 16px;
+        height: 70px;
+
+        .nav__logo {
+            font-size: 2rem;
+        }
+
+        .nav__links {
+            position: static;
+            @include flexbox(row, center, center);
+            gap: 1rem;
+            width: auto;
+            height: auto;
+            border: none;
+            background-color: unset;
+            padding: 0;
+        }
+
+        .hamburger-icon {
+            display: none;
+        }
+    }
+}

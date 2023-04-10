@@ -1,0 +1,15 @@
+@use "abstracts" as *;
+
+body {
+    background-color: $color-primary;
+    font-family: $font;
+    color: $color-primary-shade;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-container {
+    margin: 16px;
+}
