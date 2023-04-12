@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.portfolio {
+    margin-block: $section-margin-mobile;
+    &__header{
+        @include header;
+    }
+
+    @media screen and (min-width: $medium-screen){
+        margin: $section-margin-wide;
+    }
+}
+
+.project {
+    border: 3px solid $color-primary-shade;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    width: 100%;
+    
+}

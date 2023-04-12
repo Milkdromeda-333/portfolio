@@ -1,5 +1,6 @@
 $font-decor: 'Fugaz One', cursive;
 $font: 'Poppins', sans-serif;
+$font-size: 1.2rem;
 
 $color-primary: #a27bd5;
 $color-primary-shade: #281047;
@@ -10,6 +11,9 @@ $medium-screen: 678px;
 $transition-time: 200ms;
 
 $margin: 16px;
+
+$section-margin-mobile: 25px;
+$section-margin-wide: 35px;
 
 @mixin flexbox($direction, $justify, $align) {
     display: flex;
@@ -41,4 +45,15 @@ $margin: 16px;
         -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
     }
 
+}
+
+@mixin header{
+    font-family: $font-decor;
+    font-size: 30px;
+    width: fit-content;
+    margin: 16px auto;
+
+    @media screen and (min-width: $medium-screen){
+        font-size: 2.5rem;
+    }
 }

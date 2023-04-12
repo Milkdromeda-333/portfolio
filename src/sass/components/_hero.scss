@@ -2,16 +2,18 @@
 
 .hero {
     @include flexbox(column, center, center);
-    margin: $margin;
+    padding: $margin;
     margin-top: 50px;
+    // border-bottom: 2px solid $color-primary-shade;
 
     h1 {
+        @include header;
         font-weight: bold;
         font-family: $font-decor;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: $font-size;
     }
 
     &__name {

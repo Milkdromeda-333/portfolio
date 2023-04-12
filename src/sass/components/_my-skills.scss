@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+
+.skills{
+
+    &__header {
+        @include header;
+    }
+
+    &__skill-cards {
+        @include flexbox(row, center, center);
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        background-color: $color-secondary;
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 3px solid $color-primary-shade;
+    }
+
+    &__content-container {
+        @include flexbox(column-reverse, center, center);
+
+        img{
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: $medium-screen){
+        &__card {
+            padding: 10px 15px;
+        }
+
+        &__skill-cards {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__content-container {
+            // flex-direction: column;
+
+            img {
+                width: 20%;
+            }
+        }
+    }
+}

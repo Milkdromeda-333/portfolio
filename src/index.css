@@ -172,12 +172,21 @@ nav .nav__logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  padding: 16px;
   margin-top: 50px;
 }
 .hero h1 {
+  font-family: "Fugaz One", cursive;
+  font-size: 30px;
+  width: fit-content;
+  margin: 16px auto;
   font-weight: bold;
   font-family: "Fugaz One", cursive;
+}
+@media screen and (min-width: 678px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 }
 .hero p {
   font-size: 1.2rem;
@@ -244,6 +253,80 @@ nav .nav__logo {
   .hero div {
     width: 50%;
   }
+}
+
+.skills__header {
+  font-family: "Fugaz One", cursive;
+  font-size: 30px;
+  width: fit-content;
+  margin: 16px auto;
+}
+@media screen and (min-width: 678px) {
+  .skills__header {
+    font-size: 2.5rem;
+  }
+}
+.skills__skill-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.skills__card {
+  background-color: #f67ba4;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 3px solid #281047;
+}
+.skills__content-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.skills__content-container img {
+  width: 50%;
+}
+@media screen and (min-width: 678px) {
+  .skills__card {
+    padding: 10px 15px;
+  }
+  .skills__skill-cards {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .skills__content-container img {
+    width: 20%;
+  }
+}
+
+.portfolio {
+  margin-block: 25px;
+}
+.portfolio__header {
+  font-family: "Fugaz One", cursive;
+  font-size: 30px;
+  width: fit-content;
+  margin: 16px auto;
+}
+@media screen and (min-width: 678px) {
+  .portfolio__header {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 678px) {
+  .portfolio {
+    margin: 35px;
+  }
+}
+
+.project {
+  border: 3px solid #281047;
+  background-color: #f67ba4;
+  border-radius: 10px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

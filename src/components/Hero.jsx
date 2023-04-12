@@ -9,7 +9,8 @@ function Hero() {
 
 
             <div class="hero__content">
-                <h1>My name is
+                <h1>
+                    My name is
                     <span class="hero__name">Anjanique Mackey</span>
                     , and I am a web developer. I turn software dreams into software reality.
                 </h1>
