@@ -84,6 +84,7 @@ body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
   color: #281047;
+  font-size: 1.2rem;
 }
 
 a {
@@ -104,7 +105,7 @@ nav {
   background-color: #a27bd5;
   position: relative;
   font-size: 1.5rem;
-  border-bottom: 2px solid #281047;
+  border-bottom: 3px solid #281047;
   position: fixed;
   top: 0;
   left: 0;
@@ -125,12 +126,12 @@ nav .hamburger-icon img {
 nav .nav__links {
   padding: 16px 0 0;
   position: absolute;
-  top: 103%;
+  top: 105%;
   left: -100%;
   width: 100%;
   height: 100vh;
   text-align: center;
-  border-right: 2px solid #281047;
+  border-right: 3px solid #281047;
   background-color: #a27bd5;
   transition: all 300ms ease-in-out;
 }
@@ -177,7 +178,7 @@ nav .nav__logo {
 }
 .hero h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 30px;
+  font-size: 1.8rem;
   width: fit-content;
   margin: 16px auto;
   font-weight: bold;
@@ -229,7 +230,7 @@ nav .nav__logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 @media all and (min-width: 678px) {
   .hero {
@@ -237,8 +238,8 @@ nav .nav__logo {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 80px;
-    margin-inline: 0;
+    height: 100vh;
+    padding: 0;
   }
   .hero__img {
     height: auto;
@@ -257,7 +258,7 @@ nav .nav__logo {
 
 .skills__header {
   font-family: "Fugaz One", cursive;
-  font-size: 30px;
+  font-size: 1.8rem;
   width: fit-content;
   margin: 16px auto;
 }
@@ -273,11 +274,12 @@ nav .nav__logo {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  font-size: 1.1rem;
 }
 .skills__card {
   background-color: #f67ba4;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 2px 5px;
   border: 3px solid #281047;
 }
 .skills__content-container {
@@ -295,6 +297,7 @@ nav .nav__logo {
   }
   .skills__skill-cards {
     width: 80%;
+    font-size: 1.1rem;
     margin: 0 auto;
   }
   .skills__content-container img {
@@ -307,7 +310,7 @@ nav .nav__logo {
 }
 .portfolio__header {
   font-family: "Fugaz One", cursive;
-  font-size: 30px;
+  font-size: 1.8rem;
   width: fit-content;
   margin: 16px auto;
 }
@@ -323,10 +326,91 @@ nav .nav__logo {
 }
 
 .project {
-  border: 3px solid #281047;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+.project:not(:last-of-type) {
+  margin-bottom: 58px;
+}
+.project__header {
+  font-family: "Fugaz One", cursive;
+  font-size: 1.4rem;
+}
+.project__tech-used-header {
+  font-weight: bold;
+}
+.project__tech-used {
+  margin-block: 16px;
+  font-style: italic;
+}
+.project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.project__link {
   background-color: #f67ba4;
   border-radius: 10px;
-  width: 100%;
+  padding: 5px 10px;
+  outline: 3px solid #281047;
+  width: 150px;
+  text-align: center;
+}
+.project__img {
+  margin-top: -35%;
+}
+@media screen and (min-width: 1053px) {
+  .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #281047;
+    padding-inline: 16px;
+  }
+  .project:not(:last-of-type) {
+    margin-bottom: 48px;
+  }
+  .project:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+  .project__header {
+    font-family: "Fugaz One", cursive;
+    font-size: 2rem;
+  }
+  .project__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100%;
+  }
+  .project__links {
+    margin-bottom: 16px;
+  }
+  .project__link {
+    cursor: pointer;
+  }
+  .project__link:hover {
+    outline-width: 4px;
+  }
+  .project__link:active {
+    background-color: #f893b4;
+  }
+  .project__img {
+    height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: -120px;
+    align-self: end;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

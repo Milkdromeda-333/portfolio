@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Makeup Market",
+        "repoUrl": "https://github.com/Milkdromeda-333/makeup-market",
+        "liveDemoUrl": "https://makeup-market.surge.sh/",
+        "img": "/8828bf0a-acf9-480b-b862-4bece4c5ca6e.svg",
+        "gif": "https://imgbox.com/RzSy77Tp",
+        "description": "Makeup Market was made to practice consuming data from an open RESTful API, problem solving, and web design. It features a cart for adding products and a functional checkout page with discount and mock purchase functionality.",
+        "technologies": [
+            "React",
+            "TailwindCSS",
+            "HTML",
+            "Axios",
+            "REST API"
+        ],
+        "type": "frontend"
+    },
+    {
+        "name": "Makelist",
+        "repoUrl": "https://github.com/Milkdromeda-333/Makelist",
+        "liveDemoUrl": "https://makelist.cyclic.app/",
+        "img": "/0f7ee2d4-edf4-4613-88b5-e0d673b622f8.svg",
+        "gif": "https://imgbox.com/mqIc0GaZ",
+        "description": "This website allows users to make checklists with items that can be set to be repeated without the hassle. It features beautiful and simple UI and UX, and an appealing dark and light mode.",
+        "technologies": [
+            "React",
+            "Tailwind",
+            "NodeJS",
+            "Express",
+            "JWTs",
+            "MongoDB",
+            "Mongoose",
+            "Axios"
+        ],
+        "type": "full-stack"
+    },
+    {
+        "name": "Ugly Thingz",
+        "repoUrl": "https://github.com/Milkdromeda-333/ugly-thingz",
+        "liveDemoUrl": "https://milkdromeda-333.github.io/ugly-thingz/",
+        "img": "/d8333627-15c1-4df3-a33d-924938e5ef19.svg",
+        "gif": "https://imgbox.com/jVlRlJAK",
+        "description": "Ugly Things allows users to post links to pictures that they deem ugly. I practiced consuming data from API's, as well as writing to, updating, and deleting API resources.",
+        "technologies": [
+            "React",
+            "HTML",
+            "CSS",
+            "Axios",
+            "REST API"
+        ],
+        "type": "frontend"
+    }
+]

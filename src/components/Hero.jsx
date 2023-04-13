@@ -21,7 +21,7 @@ function Hero() {
                     curious and resourceful go-getter, you should consider me :)
                 </p>
                 <button class="hero__button">
-                    Contact Me.
+                    My Resume.
                 </button>
             </div>
         </div>

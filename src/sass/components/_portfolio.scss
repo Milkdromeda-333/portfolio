@@ -12,9 +12,93 @@
 }
 
 .project {
-    border: 3px solid $color-primary-shade;
-    background-color: $color-secondary;
-    border-radius: 10px;
+    @include flexbox(column, center, center);
+    gap: 32px;
     width: 100%;
+
+    &:not(:last-of-type){
+        margin-bottom: 58px;
+    }
     
+    &__header {
+        font-family: $font-decor;
+        font-size: $font-size-mobile-h3;
+    }
+
+    &__tech-used-header {
+        font-weight: bold;
+    }
+
+    &__tech-used {
+        margin-block: 16px;
+        font-style: italic
+    }
+
+    &__links {
+        @include flexbox(row, center, center);
+        gap: 10px;
+        margin-top: 16px;
+    }
+    
+    &__link {
+        background-color: $color-secondary;
+        border-radius: 10px;
+        padding: 5px 10px;
+        outline: 3px solid $color-primary-shade;
+        width: 150px;
+        text-align: center;
+    }
+
+    &__img {
+        // arbitrary number that keeps the image from touching anything above it on mobile
+        margin-top: -35%;
+    }
+
+    @media screen and (min-width: 1053px) {
+        @include flexbox(row, center, center);
+        
+        border-bottom: 2px solid $color-primary-shade;
+        padding-inline: 16px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 48px;
+        }
+
+        &:nth-of-type(odd){
+            flex-direction: row-reverse;
+        }
+
+        &__header {
+            font-family: $font-decor;
+            font-size: $font-size-wide-h3;
+        }
+
+        &__body {
+            @include flexbox(column, space-evenly, start);
+            height: 100%;
+        }
+
+        &__links {
+            margin-bottom: 16px;
+        }
+
+        &__link {
+            cursor: pointer;
+
+            &:hover {
+                outline-width: 4px;
+            }
+            &:active {
+                background-color: adjust-color($color-secondary, $lightness: 5%);
+            }
+        }
+
+        &__img {
+            height: 500px;
+            object-fit: cover;
+            margin: 0 auto;
+            margin-top: -120px;
+            align-self: end;
+        }
+    }
 }

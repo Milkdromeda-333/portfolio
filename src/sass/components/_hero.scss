@@ -4,7 +4,6 @@
     @include flexbox(column, center, center);
     padding: $margin;
     margin-top: 50px;
-    // border-bottom: 2px solid $color-primary-shade;
 
     h1 {
         @include header;
@@ -37,14 +36,13 @@
     }
 
     &__content {
-        @include flexbox(column, center, end);
+        @include flexbox(column, center, center);
     }
 
     @media all and (min-width: $medium-screen) {
         @include flexbox(row-reverse, space-evenly, center);
-
-        margin-top: 80px;
-        margin-inline: 0;
+        height: 100vh;
+        padding: 0;
 
         &__img {
             height: auto;
