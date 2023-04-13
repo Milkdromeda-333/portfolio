@@ -84,7 +84,12 @@ body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
   color: #281047;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 1.2rem;
+  }
 }
 
 a {
@@ -104,7 +109,6 @@ nav {
   padding: 0.5rem;
   background-color: #a27bd5;
   position: relative;
-  font-size: 1.5rem;
   border-bottom: 3px solid #281047;
   position: fixed;
   top: 0;
@@ -178,24 +182,22 @@ nav .nav__logo {
 }
 .hero h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: fit-content;
   margin: 16px auto;
   font-weight: bold;
+  font-size: 1.5rem;
   font-family: "Fugaz One", cursive;
 }
 @media screen and (min-width: 678px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
-}
-.hero p {
-  font-size: 1.2rem;
 }
 .hero__name {
   color: #f67ba4;
   text-shadow: 1px 1px 5px black;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   margin-left: 8px;
   margin-right: 5px;
 }
@@ -213,7 +215,7 @@ nav .nav__logo {
   -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   margin-top: 16px;
 }
 .hero__button:hover {
@@ -241,9 +243,12 @@ nav .nav__logo {
     height: 100vh;
     padding: 0;
   }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
   .hero__img {
     height: auto;
-    width: 30%;
+    width: 40%;
   }
   .hero__content {
     display: flex;
@@ -255,16 +260,27 @@ nav .nav__logo {
     width: 50%;
   }
 }
+@media all and (min-width: 1000px) {
+  .hero__img {
+    width: 30%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero__name {
+    font-size: 2.6rem;
+  }
+}
 
 .skills__header {
   font-family: "Fugaz One", cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: fit-content;
   margin: 16px auto;
 }
 @media screen and (min-width: 678px) {
   .skills__header {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 .skills__skill-cards {
@@ -274,7 +290,6 @@ nav .nav__logo {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  font-size: 1.1rem;
 }
 .skills__card {
   background-color: #f67ba4;
@@ -310,13 +325,13 @@ nav .nav__logo {
 }
 .portfolio__header {
   font-family: "Fugaz One", cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: fit-content;
   margin: 16px auto;
 }
 @media screen and (min-width: 678px) {
   .portfolio__header {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 @media screen and (min-width: 678px) {
@@ -333,12 +348,12 @@ nav .nav__logo {
   gap: 32px;
   width: 100%;
 }
-.project:not(:last-of-type) {
-  margin-bottom: 58px;
+.project:not(:first-of-type) {
+  padding-top: 58px;
 }
 .project__header {
   font-family: "Fugaz One", cursive;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .project__tech-used-header {
   font-weight: bold;
@@ -349,7 +364,7 @@ nav .nav__logo {
 }
 .project__links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -357,14 +372,30 @@ nav .nav__logo {
 }
 .project__link {
   background-color: #f67ba4;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding-block: 2px;
+  width: 100%;
   outline: 3px solid #281047;
-  width: 150px;
   text-align: center;
 }
 .project__img {
   margin-top: -35%;
+  width: 100%;
+}
+@media screen and (min-width: 342px) {
+  .project__links {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .project__link {
+    width: 150px;
+    padding-block: 5px;
+  }
+  .project__img {
+    margin-top: -30%;
+    width: 80%;
+  }
 }
 @media screen and (min-width: 1053px) {
   .project {
@@ -375,8 +406,8 @@ nav .nav__logo {
     border-bottom: 2px solid #281047;
     padding-inline: 16px;
   }
-  .project:not(:last-of-type) {
-    margin-bottom: 48px;
+  .project:not(:first-of-type) {
+    padding-top: 48px;
   }
   .project:nth-of-type(odd) {
     flex-direction: row-reverse;

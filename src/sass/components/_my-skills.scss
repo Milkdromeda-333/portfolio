@@ -10,7 +10,6 @@
         @include flexbox(row, center, center);
         gap: 10px;
         flex-wrap: wrap;
-        font-size: 1.1rem;
     }
 
     &__card {

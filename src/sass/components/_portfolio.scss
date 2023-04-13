@@ -16,9 +16,13 @@
     gap: 32px;
     width: 100%;
 
-    &:not(:last-of-type){
-        margin-bottom: 58px;
+    &:not(:first-of-type){
+        padding-top: 58px;
     }
+
+    // &:nth-last-of-type(even) {
+    //     background-color: adjust-color($color-primary, $lightness: -2%);
+    // }
     
     &__header {
         font-family: $font-decor;
@@ -35,23 +39,44 @@
     }
 
     &__links {
-        @include flexbox(row, center, center);
+        @include flexbox(column, center, center);
         gap: 10px;
         margin-top: 16px;
     }
     
     &__link {
         background-color: $color-secondary;
-        border-radius: 10px;
-        padding: 5px 10px;
+        border-radius: 5px;
+        // padding: 5px 10px;
+        padding-block: 2px;
+        width: 100%;
         outline: 3px solid $color-primary-shade;
-        width: 150px;
+        // width: 150px;
         text-align: center;
     }
 
     &__img {
         // arbitrary number that keeps the image from touching anything above it on mobile
         margin-top: -35%;
+        width: 100%;
+    }
+    
+    @media screen and (min-width: 342px) {
+        &__links {
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        &__link {
+            width: 150px;
+            padding-block: 5px;
+        }
+
+        &__img {
+            margin-top: -30%;
+            width: 80%;
+        }
     }
 
     @media screen and (min-width: 1053px) {
@@ -60,8 +85,8 @@
         border-bottom: 2px solid $color-primary-shade;
         padding-inline: 16px;
 
-        &:not(:last-of-type) {
-            margin-bottom: 48px;
+        &:not(:first-of-type) {
+            padding-top: 48px;
         }
 
         &:nth-of-type(odd){
