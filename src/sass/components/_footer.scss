@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.footer {
+    border-top: 3px solid $color-primary-shade;
+    width: 100%;
+    padding-block: 16px;
+    text-align: center;
+
+    &__name {
+        font-family: $font-decor;
+    }
+}

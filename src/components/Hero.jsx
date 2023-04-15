@@ -1,11 +1,13 @@
 
 function Hero() {
 
+
     return (
         <div class="hero">
 
             <img src="https://blush.design/api/download?shareUri=1lP98Ef_dNKo30yO&c=Skin_0%7Eae5d29&bg=a27bd5&w=800&h=800&fm=png"
-                alt="me" class="hero__img" />
+                alt="me" class="hero__img"
+            />
 
 
             <div class="hero__content">
@@ -20,10 +22,12 @@ function Hero() {
                     looking for a
                     curious and resourceful go-getter, you should consider me :)
                 </p>
+
                 <button class="hero__button">
                     My Resume.
                 </button>
             </div>
+
         </div>
     )
 }

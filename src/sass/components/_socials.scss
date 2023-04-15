@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.socials {
+    @include flexbox(row, center, center);
+    gap: 10px;
+    margin-top: 10px;
+
+    &__linkedin, &__github, &__twitter {
+     @include flexbox(column, center, center);
+    }
+
+    svg {
+        font-size: 1.5rem;
+    }
+
+    &__linkedin:hover {
+        color: #0077b5;
+    }
+
+    &__github:hover {
+        color: #fff;
+    }
+
+        &__twitter:hover {
+            color: #1DA1F2;
+        }
+}

@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+.contactForm {
+
+    &__header{
+        @include header;
+    }
+
+    &__container {
+        @include flexbox(column, center, center);
+        gap: 16px;
+        
+        label {
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        textarea, input {
+            width: 100%;
+            border: none;
+            outline: 3px solid transparent;
+            border-radius: 5px;
+            padding: 5px;
+            display: block;
+            margin-top: 5px;
+
+            &:active, &:focus {
+                outline-color: $color-primary-shade;
+            }
+        }
+
+    }
+
+    &__button {
+        @include button-styles;
+        padding: 10px 20px;
+    }
+
+    @media  screen and (min-width: $medium-screen) {
+        &__container {
+           display: grid;
+           grid-template-columns: 1fr;
+           place-items: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        label {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        &__message textarea {
+            min-height: 200px;
+        }
+
+    }
+}

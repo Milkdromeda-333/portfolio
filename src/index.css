@@ -84,7 +84,7 @@ body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
   color: #281047;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 1000px) {
   body {
@@ -144,7 +144,15 @@ nav .nav__links.active {
 }
 nav .nav__logo {
   font-family: "Fugaz One", cursive;
-  color: #281047;
+  font-size: 2.3rem;
+  width: fit-content;
+  margin: 16px auto;
+  margin: unset;
+}
+@media screen and (min-width: 678px) {
+  nav .nav__logo {
+    font-size: 2.4rem;
+  }
 }
 @media screen and (min-width: 678px) {
   nav {
@@ -182,7 +190,7 @@ nav .nav__logo {
 }
 .hero h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   width: fit-content;
   margin: 16px auto;
   font-weight: bold;
@@ -215,7 +223,7 @@ nav .nav__logo {
   -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
   margin-top: 16px;
 }
 .hero__button:hover {
@@ -256,7 +264,7 @@ nav .nav__logo {
     justify-content: center;
     align-items: start;
   }
-  .hero div {
+  .hero__content {
     width: 50%;
   }
 }
@@ -272,52 +280,24 @@ nav .nav__logo {
   }
 }
 
-.skills__header {
-  font-family: "Fugaz One", cursive;
-  font-size: 1.5rem;
-  width: fit-content;
-  margin: 16px auto;
-}
-@media screen and (min-width: 678px) {
-  .skills__header {
-    font-size: 2.4rem;
-  }
-}
-.skills__skill-cards {
+.skills {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
+  margin-top: 16px;
+  width: 100%;
 }
-.skills__card {
-  background-color: #f67ba4;
-  border-radius: 10px;
-  padding: 2px 5px;
-  border: 3px solid #281047;
-}
-.skills__content-container {
+.skills__skill {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 16px;
 }
-.skills__content-container img {
-  width: 50%;
-}
-@media screen and (min-width: 678px) {
-  .skills__card {
-    padding: 10px 15px;
-  }
-  .skills__skill-cards {
-    width: 80%;
-    font-size: 1.1rem;
-    margin: 0 auto;
-  }
-  .skills__content-container img {
-    width: 20%;
-  }
+.skills__skill svg {
+  font-size: 30px;
 }
 
 .portfolio {
@@ -325,7 +305,7 @@ nav .nav__logo {
 }
 .portfolio__header {
   font-family: "Fugaz One", cursive;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   width: fit-content;
   margin: 16px auto;
 }
@@ -393,7 +373,7 @@ nav .nav__logo {
     padding-block: 5px;
   }
   .project__img {
-    margin-top: -30%;
+    margin-top: -25%;
     width: 80%;
   }
 }
@@ -442,6 +422,119 @@ nav .nav__logo {
     margin-top: -120px;
     align-self: end;
   }
+}
+
+.contactForm__header {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.3rem;
+  width: fit-content;
+  margin: 16px auto;
+}
+@media screen and (min-width: 678px) {
+  .contactForm__header {
+    font-size: 2.4rem;
+  }
+}
+.contactForm__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.contactForm__container label {
+  width: 100%;
+}
+.contactForm__container textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.contactForm__container textarea, .contactForm__container input {
+  width: 100%;
+  border: none;
+  outline: 3px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  margin-top: 5px;
+}
+.contactForm__container textarea:active, .contactForm__container textarea:focus, .contactForm__container input:active, .contactForm__container input:focus {
+  outline-color: #281047;
+}
+.contactForm__button {
+  border-radius: 100%;
+  background-color: #281047;
+  color: #f67ba4;
+  border: 3px solid #f67ba4;
+  outline: 0;
+  box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+  -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.contactForm__button:hover {
+  box-shadow: 0px 30px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  -webkit-box-shadow: 0px 20px 5px -17px rgba(255, 255, 255, 0.58) inset;
+  -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+}
+.contactForm__button:active {
+  box-shadow: 5px 25px 3px -17px rgba(255, 255, 255, 0.58) inset;
+  -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
+  -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+}
+@media screen and (min-width: 678px) {
+  .contactForm__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contactForm label {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .contactForm__message textarea {
+    min-height: 200px;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.socials__linkedin, .socials__github, .socials__twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials svg {
+  font-size: 1.5rem;
+}
+.socials__linkedin:hover {
+  color: #0077b5;
+}
+.socials__github:hover {
+  color: #fff;
+}
+.socials__twitter:hover {
+  color: #1DA1F2;
+}
+
+.footer {
+  border-top: 3px solid #281047;
+  width: 100%;
+  padding-block: 16px;
+  text-align: center;
+}
+.footer__name {
+  font-family: "Fugaz One", cursive;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,49 +1,65 @@
 @use "../abstracts" as *;
 
-.skills{
+// .skills{
 
-    &__header {
-        @include header;
-    }
+//     &__header {
+//         @include header;
+//     }
 
-    &__skill-cards {
-        @include flexbox(row, center, center);
-        gap: 10px;
-        flex-wrap: wrap;
-    }
+//     &__skill-cards {
+//         @include flexbox(row, center, center);
+//         gap: 10px;
+//         flex-wrap: wrap;
+//     }
 
-    &__card {
-        background-color: $color-secondary;
-        border-radius: 10px;
-        padding: 2px 5px;
-        border: 3px solid $color-primary-shade;
-    }
+//     &__card {
+//         background-color: $color-secondary;
+//         border-radius: 10px;
+//         padding: 2px 5px;
+//         border: 3px solid $color-primary-shade;
+//     }
 
-    &__content-container {
-        @include flexbox(column-reverse, center, center);
+//     &__content-container {
+//         @include flexbox(column-reverse, center, center);
 
-        img{
-            width: 50%;
-        }
-    }
+//         img{
+//             width: 50%;
+//         }
+//     }
 
-    @media screen and (min-width: $medium-screen){
-        &__card {
-            padding: 10px 15px;
-        }
+//     @media screen and (min-width: $medium-screen){
+//         &__card {
+//             padding: 10px 15px;
+//         }
 
-        &__skill-cards {
-            width: 80%;
-            font-size: 1.1rem;
-            margin: 0 auto;
-        }
+//         &__skill-cards {
+//             width: 80%;
+//             font-size: 1.1rem;
+//             margin: 0 auto;
+//         }
 
-        &__content-container {
-            // flex-direction: column;
+//         &__content-container {
+//             // flex-direction: column;
 
-            img {
-                width: 20%;
-            }
+//             img {
+//                 width: 20%;
+//             }
+//         }
+//     }
+// }
+
+.skills {
+    @include flexbox(row, space-evenly, center);
+    flex-wrap: wrap;
+    margin-top: 16px;
+    width: 100%;
+
+    &__skill {
+        @include flexbox(column, center, center);
+        margin: 16px;
+
+        svg {
+            font-size: 30px;
         }
     }
 }

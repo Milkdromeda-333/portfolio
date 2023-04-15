@@ -46,8 +46,8 @@ nav {
     }
 
     .nav__logo {
-        font-family: $font-decor;
-        color: $color-primary-shade;
+        @include header;
+        margin: unset;
     }
 
     @media screen and (min-width: $medium-screen) {
