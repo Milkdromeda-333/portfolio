@@ -29,6 +29,7 @@
             padding: 5px;
             display: block;
             margin-top: 5px;
+            font-family: $font;
 
             &:active, &:focus {
                 outline-color: $color-primary-shade;
@@ -43,7 +44,7 @@
     }
 
     & label:has(input:focus),
-    & label:has(textarea:focus){
+    & label:has(textarea:focus) {
         font-family: $font-decor;
     }
 

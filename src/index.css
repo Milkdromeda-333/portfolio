@@ -468,6 +468,7 @@ nav .nav__logo {
   padding: 5px;
   display: block;
   margin-top: 5px;
+  font-family: "Poppins", sans-serif;
 }
 .contactForm__container textarea:active, .contactForm__container textarea:focus, .contactForm__container input:active, .contactForm__container input:focus {
   outline-color: #281047;
