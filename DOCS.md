@@ -16,11 +16,9 @@ As I am still very new to SASS, I am still learning and this is proving to teach
 
 - Inspiration can come from anywhere :)
 
+- Get smooth scrolling to work by setting it to the html selector like html{scroll-behavior:smooth}
+
 Credits:
 - I used ezgif.com to create the gif and https://deviceshots.com/ to get the mockups. This site exports the svg's with lots of white space at the top :( so I used negative margin-top to negate it (thanks stack overflow user!!)
 
 - Illustration from blush.design
-
-
-REMINDER:
-I will bulk up the skills section by seperating by front-end, backend, and tools. three sections.

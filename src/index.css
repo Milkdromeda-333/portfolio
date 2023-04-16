@@ -80,6 +80,10 @@ a {
     scroll-behavior: auto !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
@@ -158,6 +162,9 @@ nav .nav__logo {
   nav {
     padding: 0 16px;
     height: 70px;
+  }
+  nav li:hover {
+    font-family: "Fugaz One", cursive;
   }
   nav .nav__logo {
     font-size: 2rem;
@@ -302,6 +309,7 @@ nav .nav__logo {
 
 .portfolio {
   margin-block: 25px;
+  scroll-margin-top: 5rem;
 }
 .portfolio__header {
   font-family: "Fugaz One", cursive;
@@ -424,6 +432,9 @@ nav .nav__logo {
   }
 }
 
+.contactForm {
+  scroll-behavior: smooth;
+}
 .contactForm__header {
   font-family: "Fugaz One", cursive;
   font-size: 2.3rem;
@@ -482,6 +493,9 @@ nav .nav__logo {
   box-shadow: 5px 25px 3px -17px rgba(255, 255, 255, 0.58) inset;
   -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
+}
+.contactForm label:has(input:focus), .contactForm label:has(textarea:focus) {
+  font-family: "Fugaz One", cursive;
 }
 @media screen and (min-width: 678px) {
   .contactForm__container {

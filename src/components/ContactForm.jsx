@@ -3,7 +3,7 @@ function ContactForm() {
     
 
     return (
-        <form className="contactForm">
+        <form className="contactForm" id="contact-form">
 
             <h2 className="contactForm__header">Contact Me.</h2>
             
