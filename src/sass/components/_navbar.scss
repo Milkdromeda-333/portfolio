@@ -55,6 +55,10 @@ nav {
         padding: 0 16px;
         height: 70px;
 
+        li:hover {
+            font-family: $font-decor;
+        }
+
         .nav__logo {
             font-size: 2rem;
         }

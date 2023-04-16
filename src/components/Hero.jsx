@@ -23,9 +23,9 @@ function Hero() {
                     curious and resourceful go-getter, you should consider me :)
                 </p>
 
-                <button class="hero__button">
+                <a href="https://drive.google.com/file/d/1qwXryyjwXAWph39JX8U4J1jbSIs2bLRb/view?usp=sharing" target="_blank" class="hero__button">
                     My Resume.
-                </button>
+                </a>
             </div>
 
         </div>

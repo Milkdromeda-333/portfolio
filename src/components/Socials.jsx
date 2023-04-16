@@ -4,17 +4,17 @@ function Socials() {
     
     return (
         <div className="socials">
-            <div className="socials__linkedin">
+            <a href="https://www.linkedin.com/in/anjanique-mackey/" target="_blank" className="socials__linkedin">
                 <SiLinkedin />
-            </div>
+            </a>
 
-            <div className="socials__twitter">
+            <a href="https://twitter.com/Milkdromeda333" target="_blank" className="socials__twitter">
                 <SiTwitter />
-            </div>
+            </a>
             
-            <div className="socials__github">
+            <a href="https://github.com/Milkdromeda-333" target="_blank" className="socials__github">
                 <SiGithub />
-            </div>
+            </a>
 
         </div>
     )

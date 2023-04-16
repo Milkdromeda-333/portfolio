@@ -2,6 +2,7 @@
 
 .portfolio {
     margin-block: $section-margin-mobile;
+    scroll-margin-top: 5rem;
     
     &__header{
         @include header;

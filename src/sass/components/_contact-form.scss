@@ -2,6 +2,8 @@
 
 .contactForm {
 
+    scroll-behavior: smooth;
+
     &__header{
         @include header;
     }
@@ -38,6 +40,11 @@
     &__button {
         @include button-styles;
         padding: 10px 20px;
+    }
+
+    & label:has(input:focus),
+    & label:has(textarea:focus){
+        font-family: $font-decor;
     }
 
     @media  screen and (min-width: $medium-screen) {

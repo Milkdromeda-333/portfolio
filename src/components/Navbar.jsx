@@ -10,9 +10,9 @@ function Navbar() {
     
     return (
         <nav>
-            <div class="nav__logo">
+            <a href="#" class="nav__logo">
                 A.M. Portfolio.
-            </div>
+            </a>
             
             <div class="hamburger-icon" id="hamburger-icon" onClick={toggleMobileNav}>
 
@@ -24,14 +24,14 @@ function Navbar() {
             </div>
 
             <ul class={`nav__links ${isMobileNavOpen && "active"}`} id="nav-links">
-                <li>
+                <li onClick={toggleMobileNav}>
                     <a href="#">About Me.</a>
                 </li>
-                <li>
-                    <a href="#">Portfolio.</a>
+                <li onClick={toggleMobileNav}>
+                    <a href="#portfolio">Portfolio.</a>
                 </li>
-                <li>
-                    <a href="#">Contact Me.</a>
+                <li onClick={toggleMobileNav}>
+                    <a href="#contact-form">Contact Me.</a>
                 </li>
             </ul>
         </nav>
