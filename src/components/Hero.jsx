@@ -16,12 +16,6 @@ function Hero() {
                     <span class="hero__name">Anjanique Mackey</span>
                     , and I am a web developer. I turn software dreams into software reality.
                 </h1>
-                <p className="hero__intro">
-                    I am fueled by my passion for learning, challenges, and innovative software and designs. If your
-                    team is
-                    looking for a
-                    curious and resourceful go-getter, you should consider me :)
-                </p>
 
                 <a href="https://drive.google.com/file/d/1qwXryyjwXAWph39JX8U4J1jbSIs2bLRb/view?usp=sharing" target="_blank" class="hero__button">
                     My Resume.

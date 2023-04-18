@@ -16,7 +16,7 @@ function App() {
         <Hero />
       </header>
       <div className="body-container">
-        {/* <MySkills /> */}
+        <MySkills />
         <Portfolio/>
         <ContactForm />
       </div>

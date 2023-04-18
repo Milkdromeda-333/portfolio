@@ -12,6 +12,7 @@ function ContactForm() {
                     Name:
                     <input type="text" name="name" required />
                 </label>
+                
                 <label htmlFor="email" className="contactForm__email">
                     Email:
                     <input type="email" name='email'  required />

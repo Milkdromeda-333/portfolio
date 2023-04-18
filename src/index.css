@@ -112,8 +112,9 @@ nav {
   width: 100%;
   padding: 0.5rem;
   background-color: #a27bd5;
-  position: relative;
   border-bottom: 3px solid #281047;
+  box-shadow: 0 0 3px black;
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -287,24 +288,93 @@ nav .nav__logo {
   }
 }
 
-.skills {
+.about-me__header {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.3rem;
+  width: fit-content;
+  margin: 16px auto;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 678px) {
+  .about-me__header {
+    font-size: 2.4rem;
+  }
+}
+.about-me__special-words {
+  font-family: "Fugaz One", cursive;
+}
+.about-me__skills-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 16px;
-  width: 100%;
+  gap: 15px;
+  margin-inline: auto;
 }
-.skills__skill {
+.about-me__skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  width: 45%;
+  height: 150px;
+  background-color: #281047;
+  color: #a27bd5;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
 }
-.skills__skill svg {
-  font-size: 30px;
+.about-me__skill svg {
+  font-size: 40px;
+}
+.about-me__skill:first-of-type svg {
+  color: #E34C26;
+}
+.about-me__skill:nth-child(2) svg {
+  color: #007DB7;
+}
+.about-me__skill:nth-child(3) svg {
+  color: #FFCA3E;
+}
+.about-me__skill:nth-child(4) svg {
+  color: #61DBFB;
+}
+.about-me__skill:nth-child(5) svg {
+  color: #509941;
+}
+.about-me__skill:nth-child(6) svg {
+  color: #8a8a8a;
+}
+.about-me__skill:nth-child(7) svg {
+  color: #fff;
+}
+.about-me__skill:nth-child(8) svg {
+  color: #07B0CE;
+}
+.about-me__skill:nth-child(9) svg {
+  color: #C76395;
+}
+.about-me__skill:nth-child(10) svg {
+  color: #409937;
+}
+.about-me__skill:nth-child(11) svg {
+  color: #f67ba4;
+}
+@media screen and (min-width: 678px) {
+  .about-me__skill {
+    width: 20%;
+    max-width: 1500px;
+    height: 150px;
+  }
+  .about-me__skill:not(:hover) svg {
+    color: #a27bd5;
+  }
+  .about-me__skill:hover {
+    color: white;
+    border: 4px solid #f67ba4;
+  }
 }
 
 .portfolio {
@@ -366,9 +436,13 @@ nav .nav__logo {
   outline: 3px solid #281047;
   text-align: center;
 }
+.project__link:active {
+  outline: 4px solid #281047;
+}
 .project__img {
   margin-top: -35%;
   width: 100%;
+  pointer-events: none;
 }
 @media screen and (min-width: 342px) {
   .project__links {
@@ -432,9 +506,6 @@ nav .nav__logo {
   }
 }
 
-.contactForm {
-  scroll-behavior: smooth;
-}
 .contactForm__header {
   font-family: "Fugaz One", cursive;
   font-size: 2.3rem;
@@ -463,7 +534,7 @@ nav .nav__logo {
 .contactForm__container textarea, .contactForm__container input {
   width: 100%;
   border: none;
-  outline: 3px solid transparent;
+  outline: 4px solid transparent;
   border-radius: 5px;
   padding: 5px;
   display: block;
