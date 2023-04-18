@@ -12,10 +12,16 @@ function Hero() {
 
             <div class="hero__content">
                 <h1>
-                    My name is
+                    Hey! My name is&nbsp;
+                    
                     <span class="hero__name">Anjanique Mackey</span>
-                    , and I am a web developer. I turn software dreams into software reality.
+                    .
                 </h1>
+
+                <p> I'm a
+                    <span className="about-me__special-words"> MERN stack web developer </span>
+                    who loves diving into the nitty-gritty details of how things work. I got into this field because I love a good challenge and enjoy solving problems, but I soon discovered that it's also a really creative outlet for me. My ultimate goal is to use my skills to make a positive impact on the world and create software that people find useful and enjoyable. I'm always curious and eager to learn more, and I'm excited to use my skills to create awesome stuff.
+                </p>
 
                 <a href="https://drive.google.com/file/d/1qwXryyjwXAWph39JX8U4J1jbSIs2bLRb/view?usp=sharing" target="_blank" class="hero__button">
                     My Resume.

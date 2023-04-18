@@ -193,17 +193,17 @@ nav .nav__logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px;
   margin-top: 50px;
+  padding: 16px;
 }
 .hero h1 {
   font-family: "Fugaz One", cursive;
   font-size: 2.3rem;
   width: fit-content;
   margin: 16px auto;
-  font-weight: bold;
-  font-size: 1.5rem;
-  font-family: "Fugaz One", cursive;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 2rem;
 }
 @media screen and (min-width: 678px) {
   .hero h1 {
@@ -211,11 +211,20 @@ nav .nav__logo {
   }
 }
 .hero__name {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.3rem;
+  width: fit-content;
+  margin: 16px auto;
   color: #f67ba4;
   text-shadow: 1px 1px 5px black;
-  font-size: 1.6rem;
-  margin-left: 8px;
   margin-right: 5px;
+  margin-block: 0;
+  display: inline-block;
+}
+@media screen and (min-width: 678px) {
+  .hero__name {
+    font-size: 2.4rem;
+  }
 }
 .hero__img {
   border-radius: 15px;
@@ -288,12 +297,15 @@ nav .nav__logo {
   }
 }
 
+.about-me {
+  margin-block: 25px;
+}
 .about-me__header {
   font-family: "Fugaz One", cursive;
   font-size: 2.3rem;
   width: fit-content;
   margin: 16px auto;
-  margin: 0 auto;
+  margin: 16px auto;
   text-align: center;
 }
 @media screen and (min-width: 678px) {
