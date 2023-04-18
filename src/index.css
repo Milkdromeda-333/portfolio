@@ -159,6 +159,11 @@ nav .nav__logo {
     font-size: 2.4rem;
   }
 }
+@media screen and (max-width: 500px) {
+  nav .nav__logo {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 678px) {
   nav {
     padding: 0 16px;
@@ -265,7 +270,7 @@ nav .nav__logo {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    margin-top: 80px;
     padding: 0;
   }
   .hero h1 {
@@ -375,6 +380,9 @@ nav .nav__logo {
   color: #f67ba4;
 }
 @media screen and (min-width: 678px) {
+  .about-me {
+    margin-block: 35px;
+  }
   .about-me__skill {
     width: 20%;
     max-width: 1500px;

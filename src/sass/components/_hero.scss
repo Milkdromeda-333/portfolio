@@ -41,7 +41,8 @@
 
     @media all and (min-width: $medium-screen) {
         @include flexbox(row-reverse, space-evenly, center);
-        height: 100vh;
+        // height: 85vh;
+        margin-top: 80px;
         padding: 0;
 
         h1 {

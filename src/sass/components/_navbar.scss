@@ -49,6 +49,10 @@ nav {
     .nav__logo {
         @include header;
         margin: unset;
+
+        @media screen and (max-width: 500px){
+            font-size: 1.5rem;
+        }
     }
 
     @media screen and (min-width: $medium-screen) {
