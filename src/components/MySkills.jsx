@@ -1,84 +1,73 @@
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiGithub, SiTailwindcss, SiSass, SiAxios } from "react-icons/si";
-
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiGithub, SiTailwindcss, SiSass, SiMongodb } from "react-icons/si";
+import {MdDevices} from "react-icons/md";
 
 function MySkills() {
 
-    //   const skillsArr = () => {
-
-    //     const skills = [
-    //         "HTML + CSS",
-    //         "SASS/SCSS",
-    //         "JavaScript",
-    //         "React.js",
-    //         "Node.js",
-    //         "Responsive design",
-    //         "JWTs",
-    //         "Git",
-    //         "SASS/SCSS",
-    //         "Tailwind",
-    //         "MongoDB",
-    //         "Mongoose",
-    //         "Postman",
-    //         "REST API's",
-    //         "Express.js",
-    //         "Command Line",
-    //         "Github"];
-        
-    //     return skills.map(skill => <span className="skills__card" key={skill}>{skill}</span>)
-    // }
-
     return (
-        <div class="skills">
-            <div className="skills__skill">
-                <SiHtml5 />
-                <span>HTML</span>
-            </div>
-            
-            <div className="skills__skill">
-                <SiCss3 />
-                <span>CSS</span>
-            </div>
-            
+        <div class="about-me">
+
+            <div className="about-me__skills">
+                <h2 className="about-me__header">My skills include: </h2>
                 
-            <div className="skills__skill">
-                <SiJavascript />
-                <span>JavaScript</span>
-            </div>
-            
-                            
-            <div className="skills__skill">
-                <SiReact />
-                <span>React</span>
-            </div>
+                <div className="about-me__skills-container">
                 
-            <div className="skills__skill">
-                <SiNodedotjs />
-                <span>NodeJS</span>
-            </div>
-            
-            <div className="skills__skill">
-                <SiExpress />
-                <span>Express</span>
-            </div>
-        
-            <div className="skills__skill">
-                <SiGithub />
-                <span>Github</span>
-            </div>
+                    <div className="about-me__skill">
+                        <SiHtml5 />
+                        <span>HTML</span>
+                    </div>
+                
+                    <div className="about-me__skill">
+                        <SiCss3 />
+                        <span>CSS</span>
+                    </div>
+                
+                
+                    <div className="about-me__skill">
+                        <SiJavascript />
+                        <span>JavaScript</span>
+                    </div>
+                
+                
+                    <div className="about-me__skill">
+                        <SiReact />
+                        <span>React</span>
+                    </div>
+                
+                    <div className="about-me__skill">
+                        <SiNodedotjs />
+                        <span>NodeJS</span>
+                    </div>
+                
+                    <div className="about-me__skill">
+                        <SiExpress />
+                        <span>Express</span>
+                    </div>
 
-            <div className="skills__skill">
-                <SiTailwindcss />
-                <span>Tailwind</span>
-            </div>
+                    <div className="about-me__skill">
+                        <SiGithub />
+                        <span>Github</span>
+                    </div>
 
-            <div className="skills__skill">
-                <SiSass />
-                <span>Sass</span>
-            </div>
+                    <div className="about-me__skill">
+                        <SiTailwindcss />
+                        <span>Tailwind</span>
+                    </div>
 
-            <div className="skills__skill">
-                <SiAxios />
-                <span>Axios</span>
+                    <div className="about-me__skill">
+                        <SiSass />
+                        <span>Sass</span>
+                    </div>
+
+                    <div className="about-me__skill">
+                        <SiMongodb />
+                        <span>MongoDB + Mongoose</span>
+                    </div>
+                    
+                    <div className="about-me__skill">
+                        <MdDevices />
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
             </div>
             
         </div>

@@ -49,12 +49,18 @@
         width: 100%;
         outline: 3px solid $color-primary-shade;
         text-align: center;
+
+        &:active{
+            outline: 4px solid $color-primary-shade;
+
+        }
     }
 
     &__img {
         // arbitrary number that keeps the image from touching anything above it on mobile
         margin-top: -35%;
         width: 100%;
+        pointer-events: none;
     }
     
     @media screen and (min-width: 342px) {

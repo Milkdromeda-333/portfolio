@@ -2,7 +2,7 @@
 
 function Project({ ...project }) {
     
-    const { name, description, liveDemoUrl, repoUrl, img, technologies, gif } = project;
+    const { name, description, liveDemoUrl, repoUrl, img, technologies } = project;
 
     const techUsedList = technologies.join(", ");
     

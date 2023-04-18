@@ -18,6 +18,8 @@ As I am still very new to SASS, I am still learning and this is proving to teach
 
 - Get smooth scrolling to work by setting it to the html selector like html{scroll-behavior:smooth}
 
+- Again. Google is your best friend. To prevent an element that is covering another element from preventing pointer events for an element beneath it, use pointer-events:none on the covering element.
+
 Credits:
 - I used ezgif.com to create the gif and https://deviceshots.com/ to get the mockups. This site exports the svg's with lots of white space at the top :( so I used negative margin-top to negate it (thanks stack overflow user!!)
 
