@@ -24,3 +24,7 @@ Credits:
 - I used ezgif.com to create the gif and https://deviceshots.com/ to get the mockups. This site exports the svg's with lots of white space at the top :( so I used negative margin-top to negate it (thanks stack overflow user!!)
 
 - Illustration from blush.design
+
+
+REMEMBER:
+- To compile SASS `sass --watch src\sass\index.scss src\index.css`

@@ -4,7 +4,7 @@ $font-size-mobile-h3: 1.3rem;
 $font-size-wide-h3: 2rem;
 
 $color-primary: #a27bd5;
-$color-primary-shade: #281047;
+$color-primary-shade: #4b257d;
 $color-secondary: #f67ba4;
 
 $medium-screen: 678px;
@@ -55,6 +55,6 @@ $section-margin-wide: 35px;
     margin: 16px auto;
 
     @media screen and (min-width: $medium-screen){
-        font-size: 2.4rem;
+        font-size: 2.5rem;
     }
 }

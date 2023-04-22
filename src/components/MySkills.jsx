@@ -7,7 +7,7 @@ function MySkills() {
         <div class="about-me">
 
             <div className="about-me__skills">
-                <h2 className="about-me__header">My skills include: </h2>
+                <h2 className="about-me__header">My skills: </h2>
                 
                 <div className="about-me__skills-container">
                 

@@ -6,7 +6,7 @@
 
     &__header {
         @include header;
-        margin: 16px auto;
+        // margin: 16px auto;
         text-align: center;
     }
 
@@ -24,7 +24,7 @@
     &__skill {
         @include flexbox(column, center, center);
         width: 45%;
-        height: 150px;
+        height: 120px;
         background-color: $color-primary-shade;
         color: $color-primary;
         border-radius: 5px;
@@ -96,7 +96,7 @@
         margin-block: $section-margin-wide;
 
         &__skill {
-            width: 20%;
+            width: 18%;
             max-width: 1500px;
             height: 150px;
 
