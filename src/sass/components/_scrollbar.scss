@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: $color-primary $color-secondary;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $color-primary-shade;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $color-secondary;
+    // border-radius: 16px;
+}

@@ -643,4 +643,23 @@ nav .nav__logo {
   font-family: "Fugaz One", cursive;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #a27bd5 #f67ba4;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #4b257d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f67ba4;
+}
+
 /*# sourceMappingURL=index.css.map */
