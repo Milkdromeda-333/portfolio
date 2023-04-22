@@ -10,12 +10,14 @@
     h1 {
         @include header;
         margin: 0;
-        margin-bottom: 5px;
-        font-size: 2rem;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     &__name {
-        @include header;
+        font-size: 1.8rem;
+        font-family: $font-decor;
         color: $color-secondary;
         text-shadow: 1px 1px 5px black;
         margin-right: 5px;
@@ -31,7 +33,7 @@
 
     &__button {
         @include button-styles;
-        padding: 15px;
+        padding: 10px;
         margin-top: 16px;
     }
 

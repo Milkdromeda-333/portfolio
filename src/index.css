@@ -88,7 +88,7 @@ body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
   color: #4b257d;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 1000px) {
   body {
@@ -207,8 +207,9 @@ nav .nav__logo {
   width: fit-content;
   margin: 16px auto;
   margin: 0;
-  margin-bottom: 5px;
-  font-size: 2rem;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 @media screen and (min-width: 678px) {
   .hero h1 {
@@ -216,20 +217,13 @@ nav .nav__logo {
   }
 }
 .hero__name {
+  font-size: 1.8rem;
   font-family: "Fugaz One", cursive;
-  font-size: 2.3rem;
-  width: fit-content;
-  margin: 16px auto;
   color: #f67ba4;
   text-shadow: 1px 1px 5px black;
   margin-right: 5px;
   margin-block: 0;
   display: inline-block;
-}
-@media screen and (min-width: 678px) {
-  .hero__name {
-    font-size: 2.5rem;
-  }
 }
 .hero__img {
   border-radius: 15px;
@@ -245,7 +239,7 @@ nav .nav__logo {
   -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   margin-top: 16px;
 }
 .hero__button:hover {
@@ -441,11 +435,11 @@ nav .nav__logo {
   font-size: 1.5rem;
 }
 .project__tech-used-header {
-  font-weight: bold;
+  margin-inline: 20px;
 }
 .project__tech-used {
-  margin-block: 16px;
-  font-style: italic;
+  margin-block: 5px;
+  display: inline-block;
 }
 .project__links {
   display: flex;

@@ -15,7 +15,6 @@ function Hero() {
                     Hey! My name is&nbsp;
                     
                     <span class="hero__name">Anjanique Mackey</span>
-                    .
                 </h1>
 
                 <p> I'm a

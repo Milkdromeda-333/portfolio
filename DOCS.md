@@ -28,3 +28,7 @@ Credits:
 
 REMEMBER:
 - To compile SASS `sass --watch src\sass\index.scss src\index.css`
+
+Before posting:
+- replace resume with updated one
+- 
