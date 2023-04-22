@@ -2,7 +2,7 @@
 
 function Project({ ...project }) {
     
-    const { name, description, liveDemoUrl, repoUrl, img, technologies } = project;
+    const { name, description, liveDemoUrl, repoUrl, img, technologies, type } = project;
 
     const techUsedList = technologies.join(", ");
     
@@ -13,7 +13,11 @@ function Project({ ...project }) {
 
             <div className="project__body">
 
-                <h3 className="project__header">{name}.</h3>
+                <div className="project__header">
+                    <h3 className="project__header--name">{name}.</h3>
+                    
+                    <span> ({type})</span>
+                </div>
 
                 <span className="project__tech-used">Tech Used:  {techUsedList}</span>
 

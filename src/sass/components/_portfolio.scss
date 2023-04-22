@@ -21,11 +21,19 @@
     &:not(:first-of-type){
         padding-top: 58px;
     }
+
     
-    &__header {
-        font-family: $font-decor;
-        font-size: $font-size-mobile-h3;
+    &__header{
+        @include flexbox(row, start, center);
+        gap: 5px;
+        flex-wrap: wrap;
+
+        &--name {
+            font-family: $font-decor;
+            font-size: 1.5rem;
+        }
     }
+    
 
     &__tech-used-header {
         font-weight: bold;
@@ -95,9 +103,14 @@
             flex-direction: row-reverse;
         }
 
-        &__header {
-            font-family: $font-decor;
-            font-size: $font-size-wide-h3;
+        &__header{
+            justify-content: center;
+
+            
+            &--name {
+                font-family: $font-decor;
+                font-size: 2rem;
+            }
         }
 
         &__body {

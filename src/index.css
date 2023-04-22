@@ -113,7 +113,6 @@ nav {
   padding: 0.5rem;
   background-color: #a27bd5;
   border-bottom: 3px solid #4b257d;
-  box-shadow: 0 0 3px black;
   position: relative;
   position: fixed;
   top: 0;
@@ -430,8 +429,16 @@ nav .nav__logo {
   padding-top: 58px;
 }
 .project__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.project__header--name {
   font-family: "Fugaz One", cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .project__tech-used-header {
   font-weight: bold;
@@ -495,6 +502,9 @@ nav .nav__logo {
     flex-direction: row-reverse;
   }
   .project__header {
+    justify-content: center;
+  }
+  .project__header--name {
     font-family: "Fugaz One", cursive;
     font-size: 2rem;
   }
