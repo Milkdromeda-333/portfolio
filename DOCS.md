@@ -25,6 +25,10 @@ Credits:
 
 - Illustration from blush.design
 
+- Created the favicon with canva, cropped to a 16 x 16 image using [imageresizeonline](https://www.imageresizeonline.com/convert-image-to-16x16-pixels.php) and then converted to a .ico file using [convertio](https://convertio.co/jpeg-ico/)
+
+Accomplishments:
+- Researched in order to ensure that my software conplied with different standards.
 
 REMEMBER:
 - To compile SASS `sass --watch src\sass\index.scss src\index.css`
