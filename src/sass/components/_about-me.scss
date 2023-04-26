@@ -5,7 +5,7 @@
     margin-block: $section-margin-mobile;
 
     &__header {
-        @include header;
+        @include section-header;
         text-align: center;
     }
 
@@ -17,12 +17,11 @@
         @include flexbox(row, space-evenly, center);
         flex-wrap: wrap;
         gap: 15px;
-        margin-inline: auto;
     }
 
     &__skill {
         @include flexbox(column, center, center);
-        width: 45%;
+        width: 40%;
         height: 120px;
         background-color: $color-primary-shade;
         color: $color-primary;

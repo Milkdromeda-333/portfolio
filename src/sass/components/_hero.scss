@@ -3,12 +3,12 @@
 .hero {
     @include flexbox(column, center, center);
 
-    // negates the floating navbar
+    // makes room for the fixed position navbar
     margin-top: 50px;
     padding: $margin;
 
     h1 {
-        @include header;
+        @include section-header;
         margin: 0;
         margin-bottom: 10px;
         font-size: 1.5rem;

@@ -3,7 +3,7 @@
 .contactForm {
 
     &__header{
-        @include header;
+        @include section-header;
     }
 
     &__container {

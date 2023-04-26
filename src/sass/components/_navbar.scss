@@ -47,7 +47,7 @@ nav {
     }
 
     .nav__logo {
-        @include header;
+        @include section-header;
         margin: unset;
 
         @media screen and (max-width: 500px){
