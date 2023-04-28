@@ -3,8 +3,8 @@
         "name": "Makeup Market",
         "repoUrl": "https://github.com/Milkdromeda-333/makeup-market",
         "liveDemoUrl": "https://makeup-market.surge.sh/",
-        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682707612/portfolio%20assets/makeup-market_jqr23m.svg",
-        "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682709419/portfolio%20assets/makeup-market_qpmryc.png",
+        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710662/makeup-market_saf2mj.svg",
+        "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710597/makeup-market_fnourj.png",
         "description": "Makeup Market was made to practice consuming data from an open RESTful API, problem solving, and web design. It features a cart for adding products and a functional checkout page with discount and mock purchase functionality.",
         "technologies": [
             "React",
@@ -38,7 +38,7 @@
         "name": "Ugly Thingz",
         "repoUrl": "https://github.com/Milkdromeda-333/ugly-thingz",
         "liveDemoUrl": "https://milkdromeda-333.github.io/ugly-thingz/",
-        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682708908/portfolio%20assets/ugly-things_eglrqo.svg",
+        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710423/ugly-things_xyzptn.svg",
         "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682709419/portfolio%20assets/ugly-things_xftabd.png",
         "description": "Ugly Things allows users to post links to pictures that they deem ugly. I practiced consuming data from API's, as well as writing to, updating, and deleting API resources.",
         "technologies": [

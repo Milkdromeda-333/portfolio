@@ -42,7 +42,6 @@
     &__tech-used {
         margin-block: 5px;
         display: inline-block;
-        // font-style: italic;
     }
 
     &__links {
@@ -73,8 +72,14 @@
 
         &.firefox {
             margin-top: 0;
-            height: min-content;
+            width: 70%;
+                                        // images start to be too big
+            @media screen and (min-width: 464px) {
+             width: 40%;
+            }
         }
+
+
     }
     
     @media screen and (min-width: 342px) {
@@ -112,7 +117,6 @@
         &__header{
             justify-content: center;
 
-            
             &--name {
                 font-family: $font-decor;
                 font-size: 2rem;
@@ -122,6 +126,7 @@
         &__body {
             @include flexbox(column, space-evenly, start);
             height: 100%;
+            max-width: 70%;
         }
 
         &__links {
@@ -145,6 +150,10 @@
             margin: 0 auto;
             margin-top: -120px;
             align-self: end;
+
+            &.firefox{
+                height: 100%;
+            }
         }
     }
 }
