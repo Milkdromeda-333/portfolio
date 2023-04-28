@@ -20,6 +20,8 @@ As I am still very new to SASS, I am still learning and this is proving to teach
 
 - Again. Google is your best friend. To prevent an element that is covering another element from preventing pointer events for an element beneath it, use pointer-events:none on the covering element.
 
+- I had an issue with my svg's. They were pretty big, so I tried to upload them to cloudinary, but one of them were too big to upload, so I tried for two days to find a solution. It was 13MB and after running it through many svg optimizers, and attempting to convert it to gif, I figured it was as optimized as it would get, or something. I finally came upon the idea to change the contents of the svg, and it worked! Also, Firefox would not load my svgs for a while, so I turned them into pngs for firefox. 
+
 Credits:
 - I used ezgif.com to create the gif and https://deviceshots.com/ to get the mockups. This site exports the svg's with lots of white space at the top :( so I used negative margin-top to negate it (thanks stack overflow user!!)
 
@@ -29,10 +31,7 @@ Credits:
 
 Accomplishments:
 - Researched in order to ensure that my software conplied with different standards.
-
-REMEMBER:
-- To compile SASS `sass --watch src\sass\index.scss src\index.css`
-
-Before posting:
-- replace resume with updated one
 - 
+
+Repeated scripts:
+- To compile SASS `sass --watch src\sass\index.scss src\index.css`

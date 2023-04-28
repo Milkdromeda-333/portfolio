@@ -70,6 +70,11 @@
         margin-top: -35%;
         width: 100%;
         pointer-events: none;
+
+        &.firefox {
+            margin-top: 0;
+            height: min-content;
+        }
     }
     
     @media screen and (min-width: 342px) {

@@ -9,10 +9,6 @@
         text-align: center;
     }
 
-    &__special-words {
-        font-family: $font-decor;
-    }
-
     &__skills-container {
         @include flexbox(row, space-evenly, center);
         flex-wrap: wrap;

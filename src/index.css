@@ -249,6 +249,9 @@ nav .nav__logo {
   -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
 }
+.hero__special-words {
+  font-family: "Fugaz One", cursive;
+}
 .hero__content {
   display: flex;
   flex-direction: column;
@@ -266,6 +269,9 @@ nav .nav__logo {
   }
   .hero h1 {
     font-size: 1.3rem;
+  }
+  .hero__bolded-upon-hover:hover {
+    font-weight: bold;
   }
   .hero__img {
     height: auto;
@@ -307,9 +313,6 @@ nav .nav__logo {
   .about-me__header {
     font-size: 2.6rem;
   }
-}
-.about-me__special-words {
-  font-family: "Fugaz One", cursive;
 }
 .about-me__skills-container {
   display: flex;
@@ -460,6 +463,10 @@ nav .nav__logo {
   margin-top: -35%;
   width: 100%;
   pointer-events: none;
+}
+.project__img.firefox {
+  margin-top: 0;
+  height: min-content;
 }
 @media screen and (min-width: 342px) {
   .project__links {

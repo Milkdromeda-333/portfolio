@@ -1,15 +1,29 @@
+import { useState, useEffect, useRef } from "react";
 
 
 function Project({ ...project }) {
     
-    const { name, description, liveDemoUrl, repoUrl, img, technologies, type } = project;
+    const { name, description, liveDemoUrl, repoUrl, svgImgUrl, pngImgUrl, technologies, type } = project;
+
+    const [imgUrl, setImgUrl] = useState(undefined);
+
+    const imgRef = useRef(null);
 
     const techUsedList = technologies.join(", ");
+
+    useEffect(() => {
+        if (navigator.userAgent.includes("Firefox")) {
+            setImgUrl(pngImgUrl);
+            imgRef.current.classList.add("firefox");
+        } else {
+            setImgUrl(svgImgUrl);
+        }
+    }, [])
     
     return (
         <section className="project">
 
-            <img src={img} alt="d" className="project__img" />
+            <img src={imgUrl} alt="d" className="project__img" ref={imgRef} />
 
             <div className="project__body">
 

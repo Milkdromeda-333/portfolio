@@ -37,18 +37,27 @@
         margin-top: 16px;
     }
 
+    &__special-words {
+        font-family: $font-decor;
+    }
+
     &__content {
         @include flexbox(column, center, center);
     }
 
+    
+
     @media all and (min-width: $medium-screen) {
         @include flexbox(row-reverse, space-evenly, center);
-        // height: 85vh;
         margin-top: 80px;
         padding: 0;
 
         h1 {
             font-size: 1.3rem;
+        }
+        
+        &__bolded-upon-hover:hover {
+            font-weight: bold;
         }
 
         &__img {
