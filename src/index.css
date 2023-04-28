@@ -85,11 +85,10 @@ body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
   color: #4b257d;
-  font-size: 1rem;
 }
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -114,6 +113,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 nav li {
   list-style: none;
@@ -205,7 +205,7 @@ nav .nav__logo {
   margin: 16px auto;
   margin: 0;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 @media screen and (min-width: 678px) {
@@ -214,17 +214,19 @@ nav .nav__logo {
   }
 }
 .hero__name {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Fugaz One", cursive;
   color: #f67ba4;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 4px black;
   margin-right: 5px;
   margin-block: 0;
   display: inline-block;
 }
 .hero__img {
   border-radius: 15px;
-  height: 200px;
+  width: 40%;
+  margin: 16px;
+  animation: side-to-side 800ms linear infinite alternate;
 }
 .hero__button {
   border-radius: 100%;
@@ -257,6 +259,7 @@ nav .nav__logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 @media all and (min-width: 678px) {
   .hero {
@@ -271,36 +274,48 @@ nav .nav__logo {
     font-size: 1.3rem;
   }
   .hero__bolded-upon-hover:hover {
-    text-shadow: 0px 0px 1px #4b257d;
+    text-shadow: 1px 1px 1px #4b257d;
   }
   .hero__img {
     height: auto;
-    width: 40%;
   }
   .hero__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-  }
-  .hero__content {
     width: 50%;
+  }
+  .hero__button {
+    padding: 15px;
   }
 }
 @media all and (min-width: 1000px) {
+  .hero {
+    height: 85vh;
+  }
   .hero__img {
-    width: 30%;
+    width: 20%;
   }
   .hero h1 {
     font-size: 2.5rem;
   }
   .hero__name {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 }
 
+@keyframes side-to-side {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
 .about-me {
   margin-block: 25px;
+  margin-bottom: 2rem;
 }
 .about-me__header {
   font-family: "Fugaz One", cursive;
