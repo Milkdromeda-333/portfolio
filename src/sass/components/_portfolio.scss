@@ -122,10 +122,22 @@
             }
         }
 
+        &__img {
+            width: fit-content;
+            object-fit: cover;
+            margin: 0 auto;
+            margin-top: -120px;
+            align-self: end;
+
+            &.firefox {
+                width: 80%;
+            }
+        }
+
         &__body {
             @include flexbox(column, space-evenly, start);
             height: 100%;
-            max-width: 70%;
+            width: 100%;
         }
 
         &__links {
@@ -143,16 +155,5 @@
             }
         }
 
-        &__img {
-            height: 500px;
-            object-fit: cover;
-            margin: 0 auto;
-            margin-top: -120px;
-            align-self: end;
-
-            &.firefox{
-                height: 100%;
-            }
-        }
     }
 }

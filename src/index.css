@@ -533,13 +533,23 @@ nav .nav__logo {
     font-family: "Fugaz One", cursive;
     font-size: 2rem;
   }
+  .project__img {
+    width: fit-content;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: -120px;
+    align-self: end;
+  }
+  .project__img.firefox {
+    width: 80%;
+  }
   .project__body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: start;
     height: 100%;
-    max-width: 70%;
+    width: 100%;
   }
   .project__links {
     margin-bottom: 16px;
@@ -552,16 +562,6 @@ nav .nav__logo {
   }
   .project__link:active {
     background-color: #f893b4;
-  }
-  .project__img {
-    height: 500px;
-    object-fit: cover;
-    margin: 0 auto;
-    margin-top: -120px;
-    align-self: end;
-  }
-  .project__img.firefox {
-    height: 100%;
   }
 }
 
