@@ -27,7 +27,7 @@ function Hero() {
                     , and I'm excited to use my skills to create awesome stuff.
                 </p>
 
-                <a href="https://drive.google.com/file/d/1HaJuwxlPx4OjBeITC5tJ5XZj2uwTlMt7/view?usp=share_link" target="_blank" className="hero__button">
+                <a href="https://drive.google.com/file/d/1D_W0tc3vcYCAj5QC1_3Z-Xzbflfz1etg/view?usp=sharing" target="_blank" className="hero__button">
                     My Resume.
                 </a>
             </div>
