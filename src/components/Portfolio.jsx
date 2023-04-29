@@ -3,7 +3,7 @@ import projectData from "../project-data.json";
 
 function Portfolio() {
 
-    const projects = projectData.map(project => <Project {...project} />)
+    const projects = projectData.map(project => <Project {...project} key={project.name} />);
 
 
     return (

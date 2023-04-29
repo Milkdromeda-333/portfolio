@@ -1,10 +1,13 @@
 @use 'reset';
 @use "abstracts" as *;
 @use "base";
+
+// components
 @use "components/navbar";
 @use "components/hero";
-@use "components/my-skills";
+@use "components/about-me";
 @use "components/portfolio";
 @use "components/contact-form";
 @use "components/socials";
 @use "components/footer";
+@use "components/scrollbar";

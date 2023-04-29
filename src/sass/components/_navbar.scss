@@ -6,13 +6,13 @@ nav {
     padding: .5rem;
     background-color: $color-primary;
     border-bottom: 3px solid $color-primary-shade;
-    box-shadow: 0 0 3px black;
 
     position: relative;
 
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 
     li {
         list-style: none;
@@ -48,7 +48,7 @@ nav {
     }
 
     .nav__logo {
-        @include header;
+        @include section-header;
         margin: unset;
 
         @media screen and (max-width: 500px){
@@ -62,7 +62,7 @@ nav {
         height: 70px;
 
         li:hover {
-            transform: translate(2px, -1px);
+            translate: 2px -2px;
         }
 
         .nav__logo {

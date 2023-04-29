@@ -5,7 +5,7 @@
     scroll-margin-top: 5rem;
     
     &__header{
-        @include header;
+        @include section-header;
     }
 
     @media screen and (min-width: $medium-screen){
@@ -21,19 +21,26 @@
     &:not(:first-of-type){
         padding-top: 58px;
     }
-    
-    &__header {
-        font-family: $font-decor;
-        font-size: $font-size-mobile-h3;
-    }
 
+    
+    &__header{
+        @include flexbox(row, start, center);
+        gap: 5px;
+        flex-wrap: wrap;
+
+        &--name {
+            font-family: $font-decor;
+            font-size: 1.5rem;
+        }
+    }
+    
     &__tech-used-header {
-        font-weight: bold;
+        margin-inline: 20px;
     }
 
     &__tech-used {
-        margin-block: 16px;
-        font-style: italic
+        margin-block: 5px;
+        display: inline-block;
     }
 
     &__links {
@@ -61,6 +68,17 @@
         margin-top: -35%;
         width: 100%;
         pointer-events: none;
+
+        &.firefox {
+            margin-top: 0;
+            width: 70%;
+                                        // images start to be too big
+            @media screen and (min-width: 464px) {
+             width: 40%;
+            }
+        }
+
+
     }
     
     @media screen and (min-width: 342px) {
@@ -95,14 +113,31 @@
             flex-direction: row-reverse;
         }
 
-        &__header {
-            font-family: $font-decor;
-            font-size: $font-size-wide-h3;
+        &__header{
+            justify-content: center;
+
+            &--name {
+                font-family: $font-decor;
+                font-size: 2rem;
+            }
+        }
+
+        &__img {
+            width: fit-content;
+            object-fit: cover;
+            margin: 0 auto;
+            margin-top: -120px;
+            align-self: end;
+
+            &.firefox {
+                width: 80%;
+            }
         }
 
         &__body {
             @include flexbox(column, space-evenly, start);
             height: 100%;
+            width: 100%;
         }
 
         &__links {
@@ -120,12 +155,5 @@
             }
         }
 
-        &__img {
-            height: 500px;
-            object-fit: cover;
-            margin: 0 auto;
-            margin-top: -120px;
-            align-self: end;
-        }
     }
 }

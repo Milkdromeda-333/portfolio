@@ -1,7 +1,5 @@
 $font-decor: 'Fugaz One', cursive;
 $font: 'Poppins', sans-serif;
-$font-size-mobile-h3: 1.3rem;
-$font-size-wide-h3: 2rem;
 
 $color-primary: #a27bd5;
 $color-primary-shade: #4b257d;
@@ -48,13 +46,13 @@ $section-margin-wide: 35px;
 
 }
 
-@mixin header{
+@mixin section-header{
     font-family: $font-decor;
     font-size: 2.3rem;
     width: fit-content;
     margin: 16px auto;
 
     @media screen and (min-width: $medium-screen){
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 }

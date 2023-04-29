@@ -26,11 +26,6 @@ ol[role=list] {
   list-style: none;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -80,19 +75,20 @@ a {
     scroll-behavior: auto !important;
   }
 }
-html {
-  scroll-behavior: smooth;
+@media screen and (min-width: 678px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
   background-color: #a27bd5;
   font-family: "Poppins", sans-serif;
   color: #4b257d;
-  font-size: 1.2rem;
 }
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -113,11 +109,11 @@ nav {
   padding: 0.5rem;
   background-color: #a27bd5;
   border-bottom: 3px solid #4b257d;
-  box-shadow: 0 0 3px black;
   position: relative;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 nav li {
   list-style: none;
@@ -157,7 +153,7 @@ nav .nav__logo {
 }
 @media screen and (min-width: 678px) {
   nav .nav__logo {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -171,7 +167,7 @@ nav .nav__logo {
     height: 70px;
   }
   nav li:hover {
-    transform: translate(2px, -1px);
+    translate: 2px -2px;
   }
   nav .nav__logo {
     font-size: 2rem;
@@ -208,33 +204,29 @@ nav .nav__logo {
   width: fit-content;
   margin: 16px auto;
   margin: 0;
-  margin-bottom: 5px;
-  font-size: 2rem;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-align: center;
 }
 @media screen and (min-width: 678px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 .hero__name {
+  font-size: 2rem;
   font-family: "Fugaz One", cursive;
-  font-size: 2.3rem;
-  width: fit-content;
-  margin: 16px auto;
   color: #f67ba4;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 4px black;
   margin-right: 5px;
   margin-block: 0;
   display: inline-block;
 }
-@media screen and (min-width: 678px) {
-  .hero__name {
-    font-size: 2.5rem;
-  }
-}
 .hero__img {
   border-radius: 15px;
-  height: 200px;
+  width: 40%;
+  margin: 16px;
+  animation: side-to-side 800ms linear infinite alternate;
 }
 .hero__button {
   border-radius: 100%;
@@ -246,7 +238,7 @@ nav .nav__logo {
   -webkit-box-shadow: 0px 19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   margin-top: 16px;
 }
 .hero__button:hover {
@@ -259,11 +251,15 @@ nav .nav__logo {
   -webkit-box-shadow: 0px -19px 5px -17px rgba(255, 255, 255, 0.58) inset;
   -moz-box-shadow: 0px 19px 3px -17px rgba(255, 255, 255, 0.58) inset;
 }
+.hero__special-words {
+  font-family: "Fugaz One", cursive;
+}
 .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 @media all and (min-width: 678px) {
   .hero {
@@ -277,34 +273,49 @@ nav .nav__logo {
   .hero h1 {
     font-size: 1.3rem;
   }
+  .hero__bolded-upon-hover:hover {
+    text-shadow: 1px 1px 1px #4b257d;
+  }
   .hero__img {
     height: auto;
-    width: 40%;
   }
   .hero__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-  }
-  .hero__content {
     width: 50%;
+  }
+  .hero__button {
+    padding: 15px;
   }
 }
 @media all and (min-width: 1000px) {
+  .hero {
+    height: 80vh;
+  }
   .hero__img {
-    width: 30%;
+    width: 20%;
   }
   .hero h1 {
     font-size: 2.5rem;
   }
   .hero__name {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 }
 
+@keyframes side-to-side {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
 .about-me {
   margin-block: 25px;
+  margin-bottom: 2rem;
 }
 .about-me__header {
   font-family: "Fugaz One", cursive;
@@ -315,11 +326,8 @@ nav .nav__logo {
 }
 @media screen and (min-width: 678px) {
   .about-me__header {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
-}
-.about-me__special-words {
-  font-family: "Fugaz One", cursive;
 }
 .about-me__skills-container {
   display: flex;
@@ -328,14 +336,13 @@ nav .nav__logo {
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-inline: auto;
 }
 .about-me__skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 40%;
   height: 120px;
   background-color: #4b257d;
   color: #a27bd5;
@@ -383,10 +390,14 @@ nav .nav__logo {
   .about-me {
     margin-block: 35px;
   }
+  .about-me__skills-container {
+    gap: 20px;
+  }
   .about-me__skill {
-    width: 18%;
+    width: 15%;
     max-width: 1500px;
     height: 150px;
+    transition: transform 300ms ease;
   }
   .about-me__skill:not(:hover) svg {
     color: #a27bd5;
@@ -394,6 +405,10 @@ nav .nav__logo {
   .about-me__skill:hover {
     color: white;
     border: 4px solid #f67ba4;
+    transform: rotate(-2deg);
+  }
+  .about-me__skill:nth-child(even):hover {
+    transform: rotate(2deg);
   }
 }
 
@@ -409,7 +424,7 @@ nav .nav__logo {
 }
 @media screen and (min-width: 678px) {
   .portfolio__header {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 @media screen and (min-width: 678px) {
@@ -430,15 +445,23 @@ nav .nav__logo {
   padding-top: 58px;
 }
 .project__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.project__header--name {
   font-family: "Fugaz One", cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .project__tech-used-header {
-  font-weight: bold;
+  margin-inline: 20px;
 }
 .project__tech-used {
-  margin-block: 16px;
-  font-style: italic;
+  margin-block: 5px;
+  display: inline-block;
 }
 .project__links {
   display: flex;
@@ -463,6 +486,15 @@ nav .nav__logo {
   margin-top: -35%;
   width: 100%;
   pointer-events: none;
+}
+.project__img.firefox {
+  margin-top: 0;
+  width: 70%;
+}
+@media screen and (min-width: 464px) {
+  .project__img.firefox {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 342px) {
   .project__links {
@@ -495,8 +527,21 @@ nav .nav__logo {
     flex-direction: row-reverse;
   }
   .project__header {
+    justify-content: center;
+  }
+  .project__header--name {
     font-family: "Fugaz One", cursive;
     font-size: 2rem;
+  }
+  .project__img {
+    width: fit-content;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: -120px;
+    align-self: end;
+  }
+  .project__img.firefox {
+    width: 80%;
   }
   .project__body {
     display: flex;
@@ -504,6 +549,7 @@ nav .nav__logo {
     justify-content: space-evenly;
     align-items: start;
     height: 100%;
+    width: 100%;
   }
   .project__links {
     margin-bottom: 16px;
@@ -517,13 +563,6 @@ nav .nav__logo {
   .project__link:active {
     background-color: #f893b4;
   }
-  .project__img {
-    height: 500px;
-    object-fit: cover;
-    margin: 0 auto;
-    margin-top: -120px;
-    align-self: end;
-  }
 }
 
 .contactForm__header {
@@ -534,7 +573,7 @@ nav .nav__logo {
 }
 @media screen and (min-width: 678px) {
   .contactForm__header {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 .contactForm__container {
@@ -641,6 +680,25 @@ nav .nav__logo {
 }
 .footer__name {
   font-family: "Fugaz One", cursive;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #f67ba4 #4b257d;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #4b257d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f67ba4;
 }
 
 /*# sourceMappingURL=index.css.map */
