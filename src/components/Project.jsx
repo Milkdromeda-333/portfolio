@@ -23,7 +23,7 @@ function Project({ ...project }) {
     return (
         <section className="project">
 
-            <div>
+            <div className="project__img-container">
                 <img src={imgUrl} alt={name} className="project__img" ref={imgRef} />
             </div>
 

@@ -63,11 +63,16 @@
         }
     }
 
+    &__img-container {
+        width: 100%;
+    }
+
     &__img {
         // arbitrary number that keeps the image from touching anything above it on mobile
         margin-top: -35%;
         width: 100%;
         pointer-events: none;
+        margin-inline: auto;
 
         &.firefox {
             margin-top: 0;
@@ -81,7 +86,7 @@
 
     }
     
-    @media screen and (min-width: 342px) {
+    @media screen and (min-width: 550px) {
         &__links {
             flex-direction: row;
             gap: 10px;
@@ -94,8 +99,8 @@
         }
 
         &__img {
-            margin-top: -25%;
-            width: 80%;
+            margin-top: -18%;
+            width: 50%;
         }
     }
 

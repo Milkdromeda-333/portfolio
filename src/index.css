@@ -482,10 +482,14 @@ nav .nav__logo {
 .project__link:active {
   outline: 4px solid #4b257d;
 }
+.project__img-container {
+  width: 100%;
+}
 .project__img {
   margin-top: -35%;
   width: 100%;
   pointer-events: none;
+  margin-inline: auto;
 }
 .project__img.firefox {
   margin-top: 0;
@@ -496,7 +500,7 @@ nav .nav__logo {
     width: 40%;
   }
 }
-@media screen and (min-width: 342px) {
+@media screen and (min-width: 550px) {
   .project__links {
     flex-direction: row;
     gap: 10px;
@@ -507,8 +511,8 @@ nav .nav__logo {
     padding-block: 5px;
   }
   .project__img {
-    margin-top: -25%;
-    width: 80%;
+    margin-top: -18%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 1053px) {
