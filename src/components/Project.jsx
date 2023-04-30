@@ -24,7 +24,7 @@ function Project({ ...project }) {
         <section className="project">
 
             <div>
-                <img src={imgUrl} alt="d" className="project__img" ref={imgRef} />
+                <img src={imgUrl} alt={name} className="project__img" ref={imgRef} />
             </div>
 
             <div className="project__body">

@@ -48,7 +48,6 @@
         @include flexbox(column, center, center);
         gap: 10px;
     }
-
     
 
     @media all and (min-width: $medium-screen) {
