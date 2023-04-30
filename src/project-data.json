@@ -3,8 +3,8 @@
         "name": "Makeup Market",
         "repoUrl": "https://github.com/Milkdromeda-333/makeup-market",
         "liveDemoUrl": "https://makeup-market.surge.sh/",
-        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710662/makeup-market_saf2mj.svg",
-        "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710597/makeup-market_fnourj.png",
+        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710662/portfolio%20assets/makeup-market_saf2mj.svg",
+        "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710597/portfolio%20assets/makeup-market_fnourj.png",
         "description": "Makeup Market was fun to create, a little too fun. I spent 3 months making it perfect, and from that I learned that websites will always be a work in progress, and outlining a MVP is important for time-management's sake.",
         "technologies": [
             "React",
@@ -38,8 +38,8 @@
         "name": "Ugly Thingz",
         "repoUrl": "https://github.com/Milkdromeda-333/ugly-thingz",
         "liveDemoUrl": "https://milkdromeda-333.github.io/ugly-thingz/",
-        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710423/ugly-things_xyzptn.svg",
-        "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682816155/ugly-things_ezf5ed.png",
+        "svgImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682710423/portfolio%20assets/ugly-things_xyzptn.svg",
+        "pngImgUrl": "https://res.cloudinary.com/duclkekmt/image/upload/v1682816155/portfolio%20assets/ugly-things_ezf5ed.png",
         "description": "Ugly Things was made during October, and so my idea was to make a website with a face only a mother could love. And, I do. I love him.",
         "technologies": [
             "React",
