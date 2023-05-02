@@ -35,3 +35,9 @@ Accomplishments:
 
 Repeated scripts:
 - To compile SASS `sass --watch src\sass\index.scss src\index.css`
+
+How to deploy:
+- run `npm run build`
+- run `npm run preview` and check the build to make sure everything looks right
+- head to [netlify site deploys page](https://app.netlify.com/sites/anjanique-mackey/overview) and drop build folder into the file uploader
+- check new deployed site!
