@@ -4,8 +4,9 @@ function Hero() {
     return (
         <div className="hero">
 
-            <img src="/avatar.png"
-                alt="me" class="hero__img"
+            <img
+                src="/avatar.png"
+                alt="me" className="hero__img"
             />
 
             <div className="hero__content">

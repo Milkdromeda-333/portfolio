@@ -4,7 +4,7 @@ import {MdDevices} from "react-icons/md";
 function MySkills() {
 
     return (
-        <div class="about-me">
+        <div className="about-me">
 
             <div className="about-me__skills">
 
@@ -61,7 +61,7 @@ function MySkills() {
 
                     <div className="about-me__skill">
                         <SiMongodb />
-                        <span>MongoDB + Mongoose</span>
+                        <span>MongoDB & Mongoose</span>
                     </div>
                     
                     <div className="about-me__skill">
