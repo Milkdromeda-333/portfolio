@@ -17,7 +17,7 @@ function Hero() {
                 </h1>
 
                 <p> I'm a
-                    <span className="hero__special-words"> MERN Stack Web Developer</span>, 
+                    <span className="hero__special-words"> Software Engineer</span>, 
                     <span className="hero__bolded-upon-hover"> book-worm</span>,
                     <span className="hero__bolded-upon-hover"> space-geek</span>, and 
                     <span className="hero__bolded-upon-hover"> junk-food connoisseur</span>.
@@ -29,7 +29,7 @@ function Hero() {
                 </p>
 
                 <a
-                    href="https://drive.google.com/file/d/1mCqkiVKusctWFbgqgguyPFiNf9HGs11u/view?usp=sharing"
+                    href="https://docs.google.com/document/d/1PjOD_dFpQ-n9ZNWwhVltftP73XCcLNuWFAWLEpymTN0/edit?usp=sharing"
                     target="_blank"
                     className="hero__button"
                 >

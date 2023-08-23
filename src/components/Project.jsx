@@ -5,7 +5,7 @@ function Project({ ...project }) {
     
     const { name, description, liveDemoUrl, repoUrl, svgImgUrl, pngImgUrl, technologies, type } = project;
 
-    const [imgUrl, setImgUrl] = useState(undefined);
+    const [imgUrl, setImgUrl] = useState(pngImgUrl);
 
     const imgRef = useRef(null);
 

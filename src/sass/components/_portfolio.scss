@@ -106,7 +106,7 @@
 
     @media screen and (min-width: 1053px) {
         @include flexbox(row, center, center);
-        
+        background-color: transparent;
         border-bottom: 2px solid $color-primary-shade;
         padding-inline: 16px;
 

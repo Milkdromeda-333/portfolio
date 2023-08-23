@@ -11,14 +11,16 @@
     }
 
     &__skills-container {
-        @include flexbox(row, space-evenly, center);
+        @include flexbox(row, center, center);
         flex-wrap: wrap;
         gap: 15px;
+        background-color: $color-primary-shade;
+        padding: 16px;
+        border-radius: 5px;
     }
 
     &__skill {
         @include flexbox(column, center, center);
-        width: 25%;
         color: $color-primary-shade;
         border-radius: 5px;
         text-align: center;
@@ -27,58 +29,59 @@
             font-size: 40px;
         }
 
-        // html
-        &:first-of-type svg {
+        span {
+            display: none;
+        }
+
+        &.html svg {
             color: #E34C26;
         }
 
-        // css
-        &:nth-child(2) svg {
+        &.css svg {
             color: #007DB7;
         }
 
-        // js
-        &:nth-child(3) svg {
+        &.javascript svg {
             color: #FFCA3E;
         }
 
-        // tailwind
-        &:nth-child(4) svg {
+        &.tailwind svg {
             color: #61DBFB;
         }
 
-        // node
-        &:nth-child(5) svg {
+        &.node svg {
             color: #509941;
         }
 
-        // express
-        &:nth-child(6) svg {
+        &.typescript svg {
+            color: #3178cb;
+        }
+
+        &.express svg {
             color: #8a8a8a;
         }
 
-        // github
-        &:nth-child(7) svg {
+        &.react svg {
+            color: #61DBFB;
+        }
+
+        &.github svg {
             color: #fff;
         }
 
-        // tailwind
-        &:nth-child(8) svg {
+        &.tailwind svg {
             color: #07B0CE;
         }
 
-        // sass
-        &:nth-child(9) svg {
+        &.sass svg {
             color: #C76395;
         }
 
-        // mongodb
-        &:nth-child(10) svg {
+        &.mongodb svg {
             color: #409937;
         }
 
-        // responsive design
-        &:nth-child(11) svg {
+        &.responsive-design svg {
             color: $color-secondary;
         }
     }
@@ -89,6 +92,7 @@
 
         &__skills-container {
             gap: 20px;
+            background-color: transparent;
         }
 
         &__skill {
@@ -102,19 +106,23 @@
             height: 150px;
             transition: transform 300ms ease;
 
+            span {
+                    display: inline-block;
+            }
+
             &:not(:hover) svg {
                 color: $color-primary;
             }
 
             &:hover {
                 color: white;
-                transform: rotate(-2deg);
+                transform: rotate(-3deg);
             }
 
             &:nth-child(even) {
 
                 &:hover {
-                    transform: rotate(2deg);
+                    transform: rotate(3deg);
                 }
             }
 

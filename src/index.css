@@ -344,17 +344,19 @@ nav .nav__logo {
 .about-me__skills-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+  background-color: #4b257d;
+  padding: 16px;
+  border-radius: 5px;
 }
 .about-me__skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
   color: #4b257d;
   border-radius: 5px;
   text-align: center;
@@ -362,37 +364,46 @@ nav .nav__logo {
 .about-me__skill svg {
   font-size: 40px;
 }
-.about-me__skill:first-of-type svg {
+.about-me__skill span {
+  display: none;
+}
+.about-me__skill.html svg {
   color: #E34C26;
 }
-.about-me__skill:nth-child(2) svg {
+.about-me__skill.css svg {
   color: #007DB7;
 }
-.about-me__skill:nth-child(3) svg {
+.about-me__skill.javascript svg {
   color: #FFCA3E;
 }
-.about-me__skill:nth-child(4) svg {
+.about-me__skill.tailwind svg {
   color: #61DBFB;
 }
-.about-me__skill:nth-child(5) svg {
+.about-me__skill.node svg {
   color: #509941;
 }
-.about-me__skill:nth-child(6) svg {
+.about-me__skill.typescript svg {
+  color: #3178cb;
+}
+.about-me__skill.express svg {
   color: #8a8a8a;
 }
-.about-me__skill:nth-child(7) svg {
+.about-me__skill.react svg {
+  color: #61DBFB;
+}
+.about-me__skill.github svg {
   color: #fff;
 }
-.about-me__skill:nth-child(8) svg {
+.about-me__skill.tailwind svg {
   color: #07B0CE;
 }
-.about-me__skill:nth-child(9) svg {
+.about-me__skill.sass svg {
   color: #C76395;
 }
-.about-me__skill:nth-child(10) svg {
+.about-me__skill.mongodb svg {
   color: #409937;
 }
-.about-me__skill:nth-child(11) svg {
+.about-me__skill.responsive-design svg {
   color: #f67ba4;
 }
 @media screen and (min-width: 678px) {
@@ -401,6 +412,7 @@ nav .nav__logo {
   }
   .about-me__skills-container {
     gap: 20px;
+    background-color: transparent;
   }
   .about-me__skill {
     display: flex;
@@ -416,15 +428,18 @@ nav .nav__logo {
     height: 150px;
     transition: transform 300ms ease;
   }
+  .about-me__skill span {
+    display: inline-block;
+  }
   .about-me__skill:not(:hover) svg {
     color: #a27bd5;
   }
   .about-me__skill:hover {
     color: white;
-    transform: rotate(-2deg);
+    transform: rotate(-3deg);
   }
   .about-me__skill:nth-child(even):hover {
-    transform: rotate(2deg);
+    transform: rotate(3deg);
   }
 }
 
@@ -537,6 +552,7 @@ nav .nav__logo {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
     border-bottom: 2px solid #4b257d;
     padding-inline: 16px;
   }
