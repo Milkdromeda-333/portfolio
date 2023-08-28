@@ -12,7 +12,7 @@ $transition-time: 200ms;
 $margin: 16px;
 
 $section-margin-mobile: 25px;
-$section-margin-wide: 35px;
+$section-margin-wide: 50px;
 
 @mixin flexbox($direction, $justify, $align) {
     display: flex;

@@ -24,7 +24,7 @@
 
     
     &__header{
-        @include flexbox(row, start, center);
+        @include flexbox(row, justify-start, center);
         gap: 5px;
         flex-wrap: wrap;
 
@@ -140,7 +140,7 @@
         }
 
         &__body {
-            @include flexbox(column, space-evenly, start);
+            @include flexbox(column, space-evenly, flex-start);
             height: 100%;
             width: 100%;
         }
